@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - master
+    # Run the workflow only when the markdown files or the workflow itself are changed
     paths:
-      - 'resume/markdown/*.md'  # Only run when markdown files under 'resume/markdown' are changed
+      - 'resume/markdown/*.md'
+      - '.github/workflows/simplified_pdfs.yaml'
 
 jobs:
   generate_pdfs:
@@ -22,11 +24,11 @@ jobs:
       run: |
         sudo apt update
         sudo apt install -y weasyprint pandoc
-
-    - name: Checking out repository (shallow checkout)
+        
+    - name: Checking out repository (fetch the last 2 commits)
       uses: actions/checkout@v3
       with:
-        fetch-depth: 1  # Only fetch the latest commit
+        fetch-depth: 2  # Fetch the latest two commits to allow diffing with HEAD^
     
     - name: Generating PDFs (only for modified files)
       run: |
@@ -41,7 +43,7 @@ jobs:
       uses: test-room-7/action-update-file@v1
       with:
         file-path: |
-            resume/simple/cv-en.pdf
-            resume/simple/cv-pt.pdf
+            resume/simplified/cv-en.pdf
+            resume/simplified/cv-pt.pdf
         commit-msg: Update pdfs
         github-token: ${{ secrets.GITHUB_TOKEN }}

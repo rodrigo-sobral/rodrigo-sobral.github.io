@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: rodrigo-sobral.github.io
+Token: af79a639a6357690397880e5bb88924d8a8c4cda7e7f4fd260597ab01f4d1a73
