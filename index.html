@@ -1,276 +1,395 @@
 <!-- 
-  Hello 😊.
-
   This template is designed and developed by Nisar Hassan Naqvi
   for anyone to use for free or customize the way they like.
 
   Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta name="description" content="Add small description of yourslef.">
+	<meta name="keywords" content="python, javascript, bash, kubernetes, docker, git, unix, devops, cybersecurity" />
+	<title>Rodrigo Sobral</title>
 
-  <!-- Put your site title here -->
-  <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
-  </title>
-
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="style/index.css" />
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 </head>
 
 <body>
+	<!-- ***** Header ***** -->
+	<header class="header" role="banner" id="top">
+		<div class="row">
+			<nav class="nav" role="navigation">
+				<ul class="nav__items">
+					<li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+					<li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+					<li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+					<li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+					<li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__text-box row">
+			<div class="header__text">
+				<h1 class="heading-primary"><span>Rodrigo Sobral</span></h1>
+				<p>Cybersecurity | CERN Engineer</p>
+				<a href="#contact" class="btn btn--pink">Get in touch</a>
+			</div>
+		</div>
+	</header>
 
-  <!-- ***** Header ***** -->
+	<main role="main">
+		<!-- ***** Professional Experience ***** -->
+		<section class="client" id="experience">
+			<div class="row">
+				<h2>Professional Experience</h2>
+				<div class="work__boxes">
+					<!-- Each div with the work__box class is a project. -->
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/exp/cern.jpg" class="work__image" alt="cern" />
+						</div>
+						<div class="work__image-box">
+							<h3>CERN</h3>
+							<h4>Position: System Administrator</h4>
+							<h4>From/To: January 2024 - Present</h4>
+							<h4>City: Geneva, Switzerland</h4>
+							<h4>Tech: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD</h4>
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/exp/ucframework.jpg" class="work__image" alt="ucframework" />
+						</div>
+						<div class="work__image-box">
+							<h3>UCFramework</h3>
+							<h4>Position: Backend Developer</h4>
+							<h4>From/To: October 2022 - October 2023</h4>
+							<h4>City: Coimbra, Portugal</h4>
+							<h4>Tech: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP</h4>
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/exp/superprof.png" class="work__image" alt="superprof" />
+						</div>
+						<div class="work__image-box">
+							<h3>Superprof</h3>
+							<h4>Position: Private Teacher</h4>
+							<h4>From/To: June 2022 - July 2023</h4>
+							<h4>City: Remote Freelance</h4>
+							<h4>Tech: Python, Javascript, Networking</h4>
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/exp/projectbox.jpg" class="work__image" alt="projectbox" />
+						</div>
+						<div class="work__image-box">
+							<h3>Project Box</h3>
+							<h4>Position: Software Analyst</h4>
+							<h4>From/To: April 2022 - September 2022</h4>
+							<h4>City: Viseu, Portugal</h4>
+							<h4>Tech: Python, Bash, Redis, PostgreSQL</h4>
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/exp/criticalsoftware.jpeg" class="work__image" alt="criticalsoftware" />
+						</div>
+						<div class="work__image-box">
+							<h3>Critical Software</h3>
+							<h4>Position: Intern</h4>
+							<h4>From/To: July 2020 - August 2020</h4>
+							<h4>City: Coimbra, Portugal</h4>
+							<h4>Tech: Java, Springboot</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
 
-  <main role="main">
+		<!-- ***** Education ***** -->
+		<section class="education" id="education">
+			<div class="row">
+				<h2>Education</h2>
+				<div class="work__boxes">
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/edu/langs.png" class="work__image" alt="langs" />
+						</div>
+						<div class="work__image-box">
+							<h3>Languages</h3>
+							<h4>Portuguese: Native Language</h4>
+							<h4>English: Fluent</h4>
+							<h4>Spanish: Intermediate</h4>
+							<h4>German: Basic</h4>
+							<h4>French: Basic</h4>
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/edu/uc.png" class="work__image" alt="master" />
+						</div>
+						<div class="work__image-box">
+							<h3>Master's Degree</h3>
+							<h4>Field: Cybersecurity</h4>
+							<h4>From/To: September 2021 - July 2023</h4>
+							<h4>City: Coimbra, Portugal</h4>
+							<h4>Topics: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc</h4>
+							<h4><a target="_blank" href="/thesis" class="link__text">Thesis: Analysis of user behavioral patterns in cybersecurity</a></h4>
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/edu/tryhackme.png" class="work__image" alt="ctf" />
+						</div>
+						<div class="work__image-box">
+							<h3>CTF Player</h3>
+							<h4>Field: Offensive Security</h4>
+							<h4>From/To: 2019 - Present</h4>
+							<h4>Freelance</h4>
+							<h4>Topics: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc</h4>
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<img src="./images/edu/uc.png" class="work__image" alt="bachelor" />
+						</div>
+						<div class="work__image-box">
+							<h3>Bachelor's Degree</h3>
+							<h4>Field: Computer Science</h4>
+							<h4>From/To: September 2018 - July 2021</h4>
+							<h4>City: Coimbra, Portugal</h4>
+							<h4>Topics: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
-    <!-- ***** Work ***** -->
 
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+	<!-- ***** Certifications ***** -->
+	<section class="client" id="certifications">
+		<div class="row">
+			<h2>Certifications</h2>
+			<div class="work__boxes">
+				<div class="work__box">
+					<div class="work__text">
+						<img src="./images/certs/k8s.png" class="work__image" alt="cka" />
+					</div>
+					<div class="work__image-box">
+						<h3>CKA: Certified Kubernetes Administrator</h3>
+						<a href="https://www.credly.com/badges/3568e385-dd7e-4cdc-a05d-3678c4d7312d"
+							target="_blank" class="link__text">
+							<h4>Certification Number: LF-gevdy9r0tx</h4>
+						</a>
+					</div>
+				</div>
+				<div class="work__box">
+					<div class="work__text">
+						<img src="./images/certs/cisco.png" class="work__image" alt="cisco" />
+					</div>
+					<div class="work__image-box">
+						<h3>Cisco Networking Academy: Multiple Certifications</h3>
+						<a href="https://www.credly.com/badges/b1f9e210-bacc-4ec3-bdda-1a819cd4ad75"
+							target="_blank" class="link__text">
+							<h4>Certification Number: b1f9e210-bacc-4ec3-bdda-1a819cd4ad75</h4>
+						</a>
+						<br>
+						<a href="https://www.credly.com/badges/3792002e-00a5-453e-8743-df5744956738"
+						target="_blank" class="link__text">
+							<h4>Certification Number: 3792002e-00a5-453e-8743-df5744956738</h4>
+						</a>
+						<br>
+						<a href="https://www.credly.com/users/rodrigo-sobral/" target="_blank" class="link__text">
+							<h4>[See more]</h4>
+						</a>
+					</div>
+				</div>
+				<div class="work__box">
+					<div class="work__text">
+						<img src="./images/certs/misc.png" class="work__image" alt="misc" />
+					</div>
+					<div class="work__image-box">
+						<h3>Miscellaneous</h3>
+						<a href="pages/certifications.html" class="link__text">See all<span>&rarr;</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-          <!-- Each div with the work__box class is a project. -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
+	<!-- ***** Projects ***** -->
+	<section class="projects" id="projects">
+		<div class="row">
+			<h2>Latest Projects</h2>
+			<div class="work__boxes">
+				<div class="work__box">
+					<div class="work__text">
+						<h3>TugaCoin</h3>
+						<p>A blockchain built from scratch with support for cryptocurrency transactions, mining (proof of work) and wallet settings.</p>
+						<ul class="work__list">
+							<li>NodeJS</li>
+							<li>Bootstrap</li>
+						</ul>
+						<div class="work__links">
+							<a href="https://github.com/rodrigo-sobral/Assignment_2021_Crypto" target="_blank" class="link__text">
+								Visit Repo <span>&rarr;</span>
+							</a>
+						</div>
+					</div>
+					<div class="work__image-box" id="">
+						<img src="./images/projects/tugacoin.png" class="work__image" alt="tugacoin" />
+					</div>
+				</div>
+				<div class="work__box">
+					<div class="work__text">
+						<h3>Ethereum Todo List</h3>
+						<p>A Todo List using Solidity Smart Contracts, based on Ethereum.</p>
+						<ul class="work__list">
+							<li>NodeJS</li>
+							<li>Bootstrap</li>
+							<li>Metamask</li>
+							<li>Solidity</li>
+						</ul>
+						<div class="work__links">
+							<a href="https://github.com/rodrigo-sobral/Assignment_2021_Crypto" target="_blank" class="link__text">
+								Visit Repo <span>&rarr;</span>
+							</a>
+						</div>
+					</div>
+					<div class="work__image-box" id="">
+						<img src="./images/projects/ethtodolist.png" class="work__image" alt="ethtodolist" />
+					</div>
+				</div>
+				<div class="work__box">
+					<div class="work__text">
+						<h3>Scheduler Bot</h3>
+						<p>Bot for scheduling messages on Discord (DMs and server messages).</p>
+						<ul class="work__list">
+							<li>Python</li>
+							<li>Bash</li>
+							<li>Prisma</li>
+						</ul>
+						<div class="work__links">
+							<a href="https://github.com/rodrigo-sobral/Scheduler_Bot" target="_blank" class="link__text">
+								Visit Repo <span>&rarr;</span>
+							</a>
+						</div>
+					</div>
+					<div class="work__image-box" id="">
+						<img src="./images/projects/schedulerbot.png" class="work__image" alt="schedulerbot" />
+					</div>
+				</div>
+				<div class="work__box">
+					<div class="work__text">
+						<h3>Automated Classes</h3>
+						<p>
+							A mix of two small applications.<br>
+							One for accessing all different classes' links and another for signing their attendance sheet.
+						</p>
+						<ul class="work__list">
+							<li>Python</li>
+							<li>Bash</li>
+							<li>Selenium</li>
+						</ul>
+						<div class="work__links">
+							<a href="https://github.com/rodrigo-sobral/AutomatedClasses" target="_blank" class="link__text">
+								Visit Repo <span>&rarr;</span>
+							</a>
+						</div>
+					</div>
+					<div class="work__image-box" id="">
+						<img style="size: 70%;" src="./images/projects/automatedclasses.png" class="work__image" alt="automatedclasses" />
+						<img src="./images/projects/automatedclasses2.png" class="work__image" alt="schedulerbot" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+	<!-- ***** Resume ***** -->
+	<section class="resume" id="resume">
+		<div class="row">
+			<h2>Resume</h2>
+			<div class="about__content">
+				<div class="about__text">
+					<p>
+						Rodrigo, a 00's boy who fell in love for coffee and PlayStation at an early age (too early perhaps), and extremely interested about Finance and Internacional Economics.
+						<br>+/-5 years experience in the IT field, with a background and special interest in Cybersecurity and DevOps, but always willing to learn more about any topic.
+					</p>
+					<a target="_blank" href="/resume" class="btn">Resume</a>
+					<a target="_blank" href="/resume_simplified" class="btn">[Simplified version]</a>
+				</div>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+				<div class="about__photo-container">
+					<img class="about__photo" src="./images/pictures/rodrigo.jpeg" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+	<!-- ***** Contact ***** -->
+	<section class="contact" id="contact">
+		<div class="row">
+			<h2>Let's talk</h2>
+			<div class="contact__info">
+				<p>
+					Did you get interested in knowing more, do you have 
+					any questions or advices?
+					I'm all ears when it comes to learning more.
+					The easiest and quickest way to reach out to me is
+					via email. So, feel free to drop me a message there!
+				</p>
+				<a href="mailto:rodrigosobral@sapo.pt" class="btn">rodrigosobral@sapo.pt</a>
+			</div>
+		</div>
+	</section>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ***** Clients ***** -->
+	<!-- ***** Footer ***** -->
+	<footer id="links" role="contentinfo" class="footer">
+		<div class="row">
+			<ul class="footer__social-links">
+				<li class="footer__social-link-item">
+					<a href="https://github.com/rodrigo-sobral/" title="Github Profile">
+						<img src="./images/icons/github.svg" class="footer__social-image" alt="Github">
+					</a>
+				  </li>
+				  <li class="footer__social-link-item">
+					<a href="https://www.linkedin.com/in/rodrigo-sobral/" title="LinkedIn Profile">
+						<img src="./images/icons/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+					</a>
+				  </li>
+				  <li class="footer__social-link-item">
+					<a href="https://www.credly.com/users/rodrigo-sobral/" title="Credly Profile">
+						<img src="./images/icons/credly.svg" class="footer__social-image" alt="Credly">
+					</a>
+				  </li>
+				  <li class="footer__social-link-item">
+					<a href="https://tryhackme.com/p/RodrigoSobral" title="TryHackMe Profile">
+						<img src="./images/icons/tryhackme.svg" class="footer__social-image" alt="TryHackMe">
+					</a>
+				  </li>
+			</ul>
+		</div>
+	</footer>
 
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+	<a href="#top" class="back-to-top" title="Back to Top">
+		<img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+	</a>
+	<script src="js/index.js"></script>
 </body>
 
 </html>

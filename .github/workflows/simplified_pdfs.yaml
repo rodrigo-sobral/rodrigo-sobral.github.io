@@ -1,0 +1,47 @@
+name: Generate PDFs
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'resume/markdown/*.md'  # Only run when markdown files under 'resume/markdown' are changed
+
+jobs:
+  generate_pdfs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cache Pandoc and Weasyprint Dependencies
+      uses: actions/cache@v3
+      with:
+        path: /usr/local/bin/weasyprint  # Adjust this to the correct path for weasyprint and pandoc
+        key: weasyprint-pandoc-dependencies-cache
+
+    - name: Installing Dependencies (only if not cached)
+      run: |
+        sudo apt update
+        sudo apt install -y weasyprint pandoc
+
+    - name: Checking out repository (shallow checkout)
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1  # Only fetch the latest commit
+    
+    - name: Generating PDFs (only for modified files)
+      run: |
+        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.md$')
+        for i in $CHANGED_FILES; do 
+          echo "Processing $i" 
+          pandoc $i -o "${i%.md}.html" 
+          weasyprint "${i%.md}.html" "${i%.md}.pdf"
+        done
+
+    - name: Committing and pushing PDFs
+      uses: test-room-7/action-update-file@v1
+      with:
+        file-path: |
+            resume/simple/cv-en.pdf
+            resume/simple/cv-pt.pdf
+        commit-msg: Update pdfs
+        github-token: ${{ secrets.GITHUB_TOKEN }}
