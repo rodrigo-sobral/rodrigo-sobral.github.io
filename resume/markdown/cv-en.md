@@ -33,7 +33,7 @@
 		</ul>
 	</td>
     <td class="profile_moldure" style="border: 0; padding: 10px;">
-		<img id="profile_pic" style="border-radius: 30px; width: 150px; height: 150px;" src="resources/portrait.jpg"/>
+		<img id="profile_pic" style="border-radius: 30px; width: 150px; height: 150px;" src="images/pictures/portrait.jpg"/>
 	</td>
   </tr>
 </table>
@@ -170,7 +170,7 @@ Visual Studio Code, Figma | Git, GitHub, Postman, Docker, GitHub Actions, Jenkin
 
 - [**Critical Software**](https://criticalsoftware.com/pt), 1 month - Intern
 
-  <img id="critical_pic" style="width: 350px;" src="resources/critical_software.jpg" alt="Critical Software"/>
+  <img id="critical_pic" style="width: 350px;" src="images/pictures/criticalsoftware.jpg" alt="Critical Software"/>
  
 ___
 

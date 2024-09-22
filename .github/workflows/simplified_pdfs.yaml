@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-    # Run the workflow only when the markdown files or the workflow itself are changed
+      - dev
+    # Run when markdown files or workflow itself are updated
     paths:
       - 'resume/markdown/*.md'
       - '.github/workflows/simplified_pdfs.yaml'
@@ -30,20 +31,39 @@ jobs:
       with:
         fetch-depth: 2  # Fetch the latest two commits to allow diffing with HEAD^
     
-    - name: Generating PDFs (only for modified files)
+    - name: Checking if resume/simplified directory is empty
+      id: check_empty
       run: |
-        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.md$')
-        for i in $CHANGED_FILES; do 
-          echo "Processing $i" 
-          pandoc $i -o "${i%.md}.html" 
-          weasyprint "${i%.md}.html" "${i%.md}.pdf"
+        if [ "$(ls -A resume/simplified | grep '\.md$')" ]; then
+          echo "empty=false" >> $GITHUB_ENV
+        else
+          echo "empty=true" >> $GITHUB_ENV
+        fi
+
+    - name: Generating PDFs (only if resume/simplified is empty)
+      run: |
+        if [ "${{ env.empty }}" == "true" ]; then
+          CHANGED_FILES=$(ls -A resume/markdown/*.md)
+        else
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.resume/markdown/.*\.md$')
+        fi
+        for i in $CHANGED_FILES; do
+          i=$(basename $i)
+          echo "Processing $i"
+          pandoc resume/markdown/$i -o "${i%.md}.html"
+          weasyprint "${i%.md}.html" "resume/simplified/${i%.md}.pdf"
         done
 
-    - name: Committing and pushing PDFs
-      uses: test-room-7/action-update-file@v1
+    - name: Creating PR from dev to master
+      uses: peter-evans/create-pull-request@v3
       with:
-        file-path: |
-            resume/simplified/cv-en.pdf
-            resume/simplified/cv-pt.pdf
-        commit-msg: Update pdfs
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        title: Update resume
+        commit-message: Update simplified resume PDFs
+        add-paths: resume/markdown/*.md,resume/simplified/*.pdf
+        body: |
+          This PR updates the resume PDFs in the `resume/simplified` directory.
+        branch: resume-workflow
+        base: master
+        labels: automated
+        token: ${{ secrets.GITHUB_TOKEN }}
+        assignees: ${{ github.actor }}
