@@ -40,27 +40,27 @@
 
   - January
     - **System Administrator** at [**CERN**](https://home.cern).
-    - Tech: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
+    - **Tech**: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
 
 - **2022**
 
   - September
     - **Back-end developer** at [**UCNext**](https://www.uc.pt/ucframework).
-    - Tech: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
+    - **Tech**: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
 
   - June
     - **Private Tutor** through [**Superprof**](https://www.superprof.com) platform.
-    - Tech: Python, Javascript, Networking
+    - **Tech**: Python, Javascript, Networking
 
   - April
     - **Analyst developer** at [**Project Box**](https://projectbox.pt) (first job).
-    - Tech: Python, Bash, Redis, PostgreSQL
+    - **Tech**: Python, Bash, Redis, PostgreSQL
 
 - **2020**
 
   - August
-    - Summer Internship at [**Critical Software**](https://www.criticalsoftware.com).
-    - Tech: Java, Springboot
+    - **Summer Intern** at [**Critical Software**](https://www.criticalsoftware.com).
+    - **Tech**: Java, Springboot
 
 ---
 
@@ -68,27 +68,28 @@
 
 - **2023**
 
-  - Successfully completed **Master's Degree in Cybersecurity**.
-    - Thesis: **Analysis of user behavioral patterns in cybersecurity**.
-    - Topics: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc
+  - July
+    - Successfully completed Master's Degree in **Cybersecurity**.
+    - **Thesis**: Analysis of user behavioral patterns in cybersecurity.
+    - **Topics**: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc
 
 - **2021**
 
   - September
-    - **Master's Degree in Cybersecurity** at University of Coimbra.
+    - Master's Degree in **Cybersecurity** at University of Coimbra.
 
   - June
-    - Successfully completed **Bachelor's Degree in Computer Science**.
-    - Topics: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc
+    - Successfully completed Bachelor's Degree in **Computer Science**.
+    - **Topics**: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc
 
   - January
     - CTF exercises at [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral) (offensive security training).
-    - Topics: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
+    - **Topics**: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
 
 - **2018**
 
   - September
-    - **Bachelor's Degree in Computer Science** at University of Coimbra.
+    - Bachelor's Degree in **Computer Science** at University of Coimbra.
 
 ---
 
@@ -116,23 +117,17 @@
 ## Projects
 
 - [TugaCoin](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
-  - Tech: NodeJS, Bootstrap
+  - **Tech**: NodeJS, Bootstrap
 - [Ethereum Todo List](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
-  - Tech: NodeJS, Bootstrap, Metamask, Solidity
+  - **Tech**: NodeJS, Bootstrap, Metamask, Solidity
 - [Scheduler Bot](https://github.com/rodrigo-sobral/Scheduler_Bot)
-  - Tech: Python, Bash, Prisma
+  - **Tech**: Python, Bash, Prisma
 - [Automated Classes](https://github.com/rodrigo-sobral/AutomatedClasses)
-  - Tech: Python, Bash, Selenium
+  - **Tech**: Python, Bash, Selenium
 
 ___
 
 ## Contacts
 
-<table>
-  <tr>
-    <td><a href="https://www.linkedin.com/in/rodrigo-sobral"><b>LinkedIn</b></a></td>
-    <td><a href="https://github.com/rodrigo-sobral"><b>GitHub</b></a></td>
-    <td><a href="https://tryhackme.com/p/RodrigoSobral"><b>TryHackMe</b></a></td>
-    <td><a href="mailto:rodrigosobral@sapo.pt"><b>EMAIL</b></a></td>
-  </tr>
-</table>
+[LinkedIn](https://www.linkedin.com/in/rodrigo-sobral) | [GitHub](https://github.com/rodrigo-sobral) | [TryHackMe](https://tryhackme.com/p/RodrigoSobral) | [EMAIL](mailto:rodrigosobral@sapo.pt)
+-- | -- | -- | --
