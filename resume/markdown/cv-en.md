@@ -13,9 +13,6 @@
     width: 150px;
     height: 150px;
   }
-  #critical_pic {
-    width: 350px;
-  }
 </style>
 
 <table class="header_table" style="border-collapse: collapse; max-width: 500px; margin: 0 auto;">
@@ -39,75 +36,59 @@
 
 ## Experience
 
-- 2024
+- **2024**
 
-  - **January**
+  - January
+    - **System Administrator** at [**CERN**](https://home.cern).
+    - Tech: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
 
-    - `System Administrator` at [`CERN`](https://home.cern/).
+- **2022**
 
-      - Tech: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
+  - September
+    - **Back-end developer** at [**UCNext**](https://www.uc.pt/ucframework).
+    - Tech: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
 
-- 2022
+  - June
+    - **Private Tutor** through [**Superprof**](https://www.superprof.com) platform.
+    - Tech: Python, Javascript, Networking
 
-  - **September**
+  - April
+    - **Analyst developer** at [**Project Box**](https://projectbox.pt) (first job).
+    - Tech: Python, Bash, Redis, PostgreSQL
 
-    - `Back-end developer` at [`UCNext`](https://www.uc.pt/ucframework/).
+- **2020**
 
-      - Tech: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
-
-  - **June**
-
-    - `Private Teacher` through [`Superprof`](https://www.superprof.pt/) platform.
-
-      - Tech: Python, Javascript, Networking
-
-  - **April**
-
-    - `Analyst developer` at [`Project Box`](https://projectbox.pt/) (first job).
-
-      - Tech: Python, Bash, Redis, PostgreSQL
-
-- 2020
-
-  - **August**
-
-    - Summer Internship at [`Critical Software`](https://www.criticalsoftware.com/pt).
-
-      - Tech: Java, Springboot
+  - August
+    - Summer Internship at [**Critical Software**](https://www.criticalsoftware.com).
+    - Tech: Java, Springboot
 
 ---
 
 ## Education
 
-- 2023
+- **2023**
 
-  - Successfully completed `Master's Degree in Cybersecurity`.
+  - Successfully completed **Master's Degree in Cybersecurity**.
+    - Thesis: **Analysis of user behavioral patterns in cybersecurity**.
+    - Topics: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc
 
-    - Thesis: `Analysis of user behavioral patterns in cybersecurity`.
+- **2021**
 
-      - Topics: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc
+  - September
+    - **Master's Degree in Cybersecurity** at University of Coimbra.
 
-- 2021
+  - June
+    - Successfully completed **Bachelor's Degree in Computer Science**.
+    - Topics: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc
 
-  - **September**
+  - January
+    - CTF exercises at [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral) (offensive security training).
+    - Topics: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
 
-    - `Master's Degree in Cybersecurity` at University of Coimbra.
+- **2018**
 
-  - **June**
-
-    - Successfully completed `Bachelor's Degree in Computer Science`.
-    
-      - Topics: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc
-
-  - **January**
-
-    - CTF exercises at [`TryHackMe`](https://tryhackme.com/p/RodrigoSobral) (offensive security training).
-
-      - Topics: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
-
-- 2018
-
-  - `Bachelor's Degree in Computer Science` at University of Coimbra.
+  - September
+    - **Bachelor's Degree in Computer Science** at University of Coimbra.
 
 ---
 
@@ -147,10 +128,11 @@ ___
 
 ## Contacts
 
-[**LinkedIn**](https://www.linkedin.com/in/rodrigo-sobral)
-
-[**GitHub**](https://github.com/rodrigo-sobral)
-
-[**TryHackMe**](https://tryhackme.com/p/RodrigoSobral)
-
-[**EMAIL**](mailto:rodrigosobral@sapo.pt)
+<table>
+  <tr>
+    <td><a href="https://www.linkedin.com/in/rodrigo-sobral"><b>LinkedIn</b></a></td>
+    <td><a href="https://github.com/rodrigo-sobral"><b>GitHub</b></a></td>
+    <td><a href="https://tryhackme.com/p/RodrigoSobral"><b>TryHackMe</b></a></td>
+    <td><a href="mailto:rodrigosobral@sapo.pt"><b>EMAIL</b></a></td>
+  </tr>
+</table>
