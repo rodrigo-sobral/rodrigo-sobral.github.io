@@ -23,13 +23,10 @@
     <td class="profile_moldure" style="border: 0; padding: 10px;">
 		<ul>
 			<li>Rodrigo Fernando Henriques Sobral</li>
-			<li>23 years old</li>
-			<li>Viseu, Portugal</li>
+			<li>24 years old</li>
+			<li>CERN - System Administrator</li>
 			<li>MSc Cybersecurity</li>
-			<li>UCNext - Back-end developer</li>
-            <li>5+ years studying software development</li>
-			<li>3+ years studying cybersecurity</li>
-			<li>1.5+ years professional experience</li>
+			<li>3.5+ years professional experience</li>
 		</ul>
 	</td>
     <td class="profile_moldure" style="border: 0; padding: 10px;">
@@ -40,145 +37,119 @@
 
 ---
 
-## Storyline
+## Experience
 
-- Currently
+- 2024
 
-  - Working at `UCNext` as `Back-end developer`.
+  - **January**
 
-  - Learning:
-  
-    - Technologies: `Figma`, `Jenkins`, `GitHub Actions`, `Kubernetes`
-    
-    - Programming languages/frameworks: `Tauri` (`Rust` + `React.js`)
-  
-    - Human languages: `Deutsch`
+    - `System Administrator` at [`CERN`](https://home.cern/).
 
-  - Reading:
-
-    - `Black Hat Python, 2nd Edition`
-
-- 2023
-
-  - Successfully completed `Master's Degree in Cybersecurity` at the Science and Technology College of the University of Coimbra.
-
-    - Thesis: `Analysis of user behavioral patterns in cybersecurity`.
+      - Tech: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
 
 - 2022
 
   - **September**
 
-    - Moved to `UCNext` as back-end developer.
+    - `Back-end developer` at [`UCNext`](https://www.uc.pt/ucframework/).
 
-  - **April**
-
-    - Effective entry into the labor market, full-time.
-
-    - Analyst developer at `Project Box`.
-
-- 2021
-
-  - **September**
-
-    - Placed in the `Master's Degree in Cybersecurity` at the Science and Technology College of the University of Coimbra.
+      - Tech: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
 
   - **June**
 
-    - Successfully completed `Bachelor's Degree in Computer Science` by University of Coimbra.
+    - `Private Teacher` through [`Superprof`](https://www.superprof.pt/) platform.
+
+      - Tech: Python, Javascript, Networking
+
+  - **April**
+
+    - `Analyst developer` at [`Project Box`](https://projectbox.pt/) (first job).
+
+      - Tech: Python, Bash, Redis, PostgreSQL
 
 - 2020
 
   - **August**
 
-    - Summer Internship assigned at [`Critical Software`](https://www.criticalsoftware.com/pt).
+    - Summer Internship at [`Critical Software`](https://www.criticalsoftware.com/pt).
 
-- 2018
-
-  - **September**
-
-    - Placed in the `Bachelor's Degree in Computer Science` at the Science and Technology College of the University of Coimbra.
-
-- 2000
-
-  - **January**
-    - Born in 3rd, in Viseu.
+      - Tech: Java, Springboot
 
 ---
 
-## Capable of communicate in
+## Education
+
+- 2023
+
+  - Successfully completed `Master's Degree in Cybersecurity`.
+
+    - Thesis: `Analysis of user behavioral patterns in cybersecurity`.
+
+      - Topics: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc
+
+- 2021
+
+  - **September**
+
+    - `Master's Degree in Cybersecurity` at University of Coimbra.
+
+  - **June**
+
+    - Successfully completed `Bachelor's Degree in Computer Science`.
+    
+      - Topics: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc
+
+  - **January**
+
+    - CTF exercises at [`TryHackMe`](https://tryhackme.com/p/RodrigoSobral) (offensive security training).
+
+      - Topics: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
+
+- 2018
+
+  - `Bachelor's Degree in Computer Science` at University of Coimbra.
+
+---
+
+## Languages
 
 <tr>
 	<td>EN (Fluent)</td>
 	<td>PT (Fluent)</td>
 	<td>ES (Intermediate)</td>
 	<td>DE (Basic)</td>
+	<td>FR (Basic)</td>
 </tr>
 
 ---
 
-## Technical Skills
+## Certifications
 
-|           Technology | Relative auto-evaluation |
-| -------------------: | :----------------------- |
-|               Python | ████████████████████     |
-| JavaScript (Node.js) | ██████████████████░░     |
-|           PostgreSQL | ████████████████░░░░     |
-|                 Bash | ███████████████░░░░░     |
-|                    C | ██████████████░░░░░░     |
-|                 Rust | ████████████░░░░░░░░     |
-|                 Java | ████████████░░░░░░░░     |
-|                MySQL | █████████░░░░░░░░░░░     |
-|             Solidity | ████████░░░░░░░░░░░░     |
-|             Assembly | ████████░░░░░░░░░░░░     |
+- [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/3568e385-dd7e-4cdc-a05d-3678c4d7312d)
+- [Junior Cybersecurity Analyst Career Path](https://www.credly.com/badges/b1f9e210-bacc-4ec3-bdda-1a819cd4ad75)
+- [Ethical Hacker](https://www.credly.com/badges/3792002e-00a5-453e-8743-df5744956738)
+- [Many others](https://rodrigo-sobral.github.io/pages/certifications.html)
 
 ---
 
-## Cyber Knowledge
+## Projects
 
-- HTTP Protocol and REST APIs
-- TCP/IP Stack and OSI Model
-- Cryptography Algorithms and hash functions (Hydra, John the Ripper, Hashcat)
-- Cryptography Protocols, including TLS/SSL, SSH, PGP, IPsec, Kerberos
-- Data anonymization (ARX)
-- Wireless Procolos (including 802.11, Bluetooth, Zigbee, LoRa, Sigfox, MQTT)
-- Network protocols (including DNS, DHCP, ARP, NAT, VLANs, SMTP, FTP, SSH, SNMP, RTP)
-- Network security mechanisms including IPSec, VPN, Firewalls/WAFs IDS/IPS Systems (OpenVPN, OWASP Modsecurity, IPTables, Snort)
-- Traffic analysis and manipulation (Wireshark, Ettercap, aircrack-ng, bluez)
-- Reverse Engineering (R2)
-- Operating Systems main concepts, with Linux (kernel, permissions, processes management, services, users, file systems, memory management, networking, logs, package management, environment variables, others)
-- Information Gathering (gobuster, dirb, Shodan, google dorks, exploit-db, epios, others)
-- Penetration Testing (Nmap, Metasploit, Burpsuite, OWASP ZAP, others)
-- Web Application Security (Vulnerability Scanning, IDOR, SQL Injection, XSS, CSRF, SSRF, LDAP Injection, RCE, LFI, RFI, others)
-- Security Frameworks/Standards, including NIST, ISO/IEC 27001, CIS and OWASP
+- [TugaCoin](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
+  - Tech: NodeJS, Bootstrap
+- [Ethereum Todo List](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
+  - Tech: NodeJS, Bootstrap, Metamask, Solidity
+- [Scheduler Bot](https://github.com/rodrigo-sobral/Scheduler_Bot)
+  - Tech: Python, Bash, Prisma
+- [Automated Classes](https://github.com/rodrigo-sobral/AutomatedClasses)
+  - Tech: Python, Bash, Selenium
 
----
-
-## Tools
-
-Development | DevOps | Cybersecurity | Others
-:---: | :---: | :---: | :---:
-Visual Studio Code, Figma | Git, GitHub, Postman, Docker, GitHub Actions, Jenkins, Kubernetes | Kali Linux, CTFs (**TryHackMe**, HackTheBox, PicoCTF) | WSL, Notion, Markdown
-
-
----
-
-## Professional Experience
-
-- [**UCNext**](https://ucnext.pt), 1 year - Back-end developer
-
-- [**Project Box**](https://projectbox.pt), 5 months - Analyst developer
-
-- [**Critical Software**](https://criticalsoftware.com/pt), 1 month - Intern
-
-  <img id="critical_pic" style="width: 350px;" src="images/pictures/criticalsoftware.jpg" alt="Critical Software"/>
- 
 ___
 
 ## Contacts
 
-[**LinkedIn**](https://www.linkedin.com/in/rodrigo-sobral-378080151/)
+[**LinkedIn**](https://www.linkedin.com/in/rodrigo-sobral)
 
-[**GitHub**](https://github.com/RodrigoSobral2000)
+[**GitHub**](https://github.com/rodrigo-sobral)
 
 [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral)
 
