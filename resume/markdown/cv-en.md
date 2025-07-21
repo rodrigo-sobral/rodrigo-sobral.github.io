@@ -20,8 +20,8 @@
     <td class="profile_moldure" style="border: 0; padding: 10px;">
 		<ul>
 			<li>Rodrigo Fernando Henriques Sobral</li>
-			<li>24 years old</li>
-			<li>CERN - System Administrator</li>
+			<li>25 years old</li>
+			<li>CERN - DevOps Engineer</li>
 			<li>MSc Cybersecurity</li>
 			<li>3.5+ years professional experience</li>
 		</ul>
@@ -36,60 +36,34 @@
 
 ## Experience
 
-- **2024**
+- **DevOps Engineer** at [**CERN**](https://home.cern) (Jan 2024 – Present)
+  - **Tech**: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
 
-  - January
-    - **System Administrator** at [**CERN**](https://home.cern).
-    - **Tech**: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
+- **Back-end Developer** at [**UCNext**](https://www.uc.pt/ucframework) (Sep 2022 – Jan 2024)
+  - **Tech**: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
 
-- **2022**
+- **Private Tutor** at [**Superprof**](https://www.superprof.com) (Jun 2022 – Sep 2022)
+  - **Topics**: Python, Javascript, Networking, Algorithms, Databases, Data Structures, Operating Systems
 
-  - September
-    - **Back-end developer** at [**UCNext**](https://www.uc.pt/ucframework).
-    - **Tech**: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
+- **Analyst Developer** at [**Project Box**](https://projectbox.pt) (Apr 2022 – Jun 2022)
+  - **Tech**: Python, Bash, Redis, PostgreSQL
 
-  - June
-    - **Private Tutor** through [**Superprof**](https://www.superprof.com) platform.
-    - **Tech**: Python, Javascript, Networking
-
-  - April
-    - **Analyst developer** at [**Project Box**](https://projectbox.pt) (first job).
-    - **Tech**: Python, Bash, Redis, PostgreSQL
-
-- **2020**
-
-  - August
-    - **Summer Intern** at [**Critical Software**](https://www.criticalsoftware.com).
-    - **Tech**: Java, Springboot
+- **Summer Intern** at [**Critical Software**](https://www.criticalsoftware.com) (Aug 2020)
+  - **Tech**: Java, Springboot
 
 ---
 
 ## Education
 
-- **2023**
-
-  - July
-    - Successfully completed Master's Degree in **Cybersecurity**.
+- Master's Degree in **Cybersecurity** at University of Coimbra (2023)
     - **Thesis**: Analysis of user behavioral patterns in cybersecurity.
     - **Topics**: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc
 
-- **2021**
-
-  - September
-    - Master's Degree in **Cybersecurity** at University of Coimbra.
-
-  - June
-    - Successfully completed Bachelor's Degree in **Computer Science**.
+- Bachelor's Degree in **Computer Science** at University of Coimbra (2021)
     - **Topics**: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc
 
-  - January
-    - CTF exercises at [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral) (offensive security training).
-    - **Topics**: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
-
-- **2018**
-
-  - September
-    - Bachelor's Degree in **Computer Science** at University of Coimbra.
+- CTF exercises at [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral) (offensive security training, since 2019).
+  - **Topics**: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
 
 ---
 
@@ -99,8 +73,8 @@
 	<td>EN (Fluent)</td>
 	<td>PT (Fluent)</td>
 	<td>ES (Intermediate)</td>
-	<td>DE (Basic)</td>
 	<td>FR (Basic)</td>
+	<td>DE (Basic)</td>
 </tr>
 
 ---

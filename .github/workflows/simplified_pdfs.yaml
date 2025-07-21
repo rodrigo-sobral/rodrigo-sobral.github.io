@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - dev
     # Run when markdown files or workflow itself are updated
     paths:
       - 'resume/markdown/*.md'
