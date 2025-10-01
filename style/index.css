@@ -5,4 +5,7 @@
 .header {
     background: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .8)), url('../images/pictures/header.jpg');
     height: 100vh;
+    background-size: cover;       /* Scales the image to always fill the container */
+    background-position: center;  /* Keeps it centered when resizing */
+    background-repeat: no-repeat; /* Stops it from repeating */
 }
