@@ -9,3 +9,16 @@
     background-position: center;  /* Keeps it centered when resizing */
     background-repeat: no-repeat; /* Stops it from repeating */
 }
+
+.header__watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-style: italic;
+  pointer-events: none; /* ensures it doesn't block clicks */
+}
