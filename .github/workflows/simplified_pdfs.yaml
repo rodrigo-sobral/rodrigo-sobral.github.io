@@ -8,6 +8,8 @@ on:
     paths:
       - 'resume/markdown/*.md'
       - '.github/workflows/simplified_pdfs.yaml'
+permissions:
+  contents: write
 
 jobs:
   process_markdown:
@@ -125,17 +127,15 @@ jobs:
           weasyprint "${BASE}.html" "resume/simplified/${BASE}.pdf"
         done
 
-    - name: Creating PR from resume-workflow to master
-      uses: peter-evans/create-pull-request@v3
-      with:
-        title: Update resume
-        commit-message: Update simplified resume PDFs
-        add-paths: resume/simplified/*.pdf
-        body: |
-          This PR updates the resume PDFs in the `resume/simplified` directory.
-        branch: resume-workflow
-        base: master
-        labels: automated
-        reviewers: ${{ github.actor }}
-        token: ${{ secrets.GITHUB_TOKEN }}
-        assignees: ${{ github.actor }}
+    - name: Commit and push updated PDFs
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+        git add resume/simplified/*.pdf
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update simplified resume PDFs (automated)"
+          git push origin master
+        fi
