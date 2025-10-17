@@ -20,10 +20,10 @@
     <td class="profile_moldure" style="border: 0; padding: 10px;">
 		<ul>
 			<li>Rodrigo Fernando Henriques Sobral</li>
-			<li><BIRTH_DATE> years old</li>
+			<li>25 years old</li>
 			<li>CERN - DevOps Engineer</li>
 			<li>MSc Cybersecurity</li>
-			<li><EXPERIENCE_YEARS>+ years of professional experience</li>
+			<li>3.5+ years of professional experience</li>
 		</ul>
 	</td>
     <td class="profile_moldure" style="border: 0; padding: 10px;">
