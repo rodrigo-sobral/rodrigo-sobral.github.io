@@ -37,7 +37,7 @@
 ## Experience
 
 - **DevOps Engineer** at [**CERN**](https://home.cern) (Jan 2024 – Present)
-  - **Tech**: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD
+  - **Tech**: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD, Grafana
 
 - **Back-end Developer** at [**UCNext**](https://www.uc.pt/ucframework) (Sep 2022 – Jan 2024)
   - **Tech**: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
