@@ -20,10 +20,10 @@
     <td class="profile_moldure" style="border: 0; padding: 10px;">
 		<ul>
 			<li>Rodrigo Fernando Henriques Sobral</li>
-			<li><script>document.write(new Date().getFullYear() - 2000 - (new Date().getMonth() < 0 || (new Date().getMonth() === 0 && new Date().getDate() < 3) ? 1 : 0))</script> years old</li>
+			<li><script>new Date().getFullYear() - 2000 - (new Date().getMonth() < 0 || (new Date().getMonth() === 0 && new Date().getDate() < 3) ? 1 : 0)</script> years old</li>
 			<li>CERN - DevOps Engineer</li>
 			<li>MSc Cybersecurity</li>
-			<li><script>document.write((Math.floor((new Date() - new Date(2022, 3)) / (1000 * 60 * 60 * 24 * 30)) / 12).toFixed(1))</script>+ years of professional experience</li>
+			<li><script>(Math.floor((new Date() - new Date(2022, 3)) / (1000 * 60 * 60 * 24 * 30)) / 12).toFixed(1)</script>+ years of professional experience</li>
 		</ul>
 	</td>
     <td class="profile_moldure" style="border: 0; padding: 10px;">
