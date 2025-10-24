@@ -94,6 +94,8 @@
   - **Tech**: NodeJS, Bootstrap
 - [Ethereum Todo List](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
   - **Tech**: NodeJS, Bootstrap, Metamask, Solidity
+- [Small Personal Projects](https://github.com/rodrigo-sobral/small-personal-projects)
+  - **Tech**: Python, C, Electron, Docker
 - [Scheduler Bot](https://github.com/rodrigo-sobral/Scheduler_Bot)
   - **Tech**: Python, Bash, Prisma
 - [Automated Classes](https://github.com/rodrigo-sobral/AutomatedClasses)
@@ -104,4 +106,4 @@ ___
 ## Contacts
 
 [EMAIL](mailto:contact@rodrigo-sobral.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-sobral)
--- | -- | -- | --
+-- | --
