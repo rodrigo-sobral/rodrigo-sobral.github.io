@@ -74,7 +74,7 @@
 	<td>PT (Fluent)</td>
 	<td>ES (Intermediate)</td>
 	<td>FR (Basic)</td>
-	<td>DE (Basic)</td>
+	<!-- <td>DE (Basic)</td> -->
 </tr>
 
 ---
@@ -103,5 +103,5 @@ ___
 
 ## Contacts
 
-[LinkedIn](https://www.linkedin.com/in/rodrigo-sobral) | [GitHub](https://github.com/rodrigo-sobral) | [TryHackMe](https://tryhackme.com/p/RodrigoSobral) | [EMAIL](mailto:contact@rodrigo-sobral.com)
+[EMAIL](mailto:contact@rodrigo-sobral.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-sobral)
 -- | -- | -- | --
