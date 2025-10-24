@@ -6,8 +6,8 @@ on:
       - master
     # Run when markdown files or workflow itself are updated
     paths:
-      - 'resume/markdown/*.md'
-      - '.github/workflows/simplified_pdfs.yaml'
+      - "resume/markdown/*.md"
+      - ".github/workflows/simplified_pdfs.yaml"
 permissions:
   contents: write
 
@@ -26,7 +26,7 @@ jobs:
       - name: Get changed markdown files
         id: get_changed
         run: |
-          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^resume/markdown/.*\.md$' || true)
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^resume/markdown/.*\.md$' | tr '\n' ' ' || true)
           echo "Changed files: $CHANGED_FILES"
           echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
 
@@ -82,60 +82,60 @@ jobs:
     needs: process_markdown
     if: ${{ needs.process_markdown.outputs.changed_files != '' }}
     steps:
-    - name: Checkout repository (fetch the last 2 commits)
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 2
+      - name: Checkout repository (fetch the last 2 commits)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
 
-    - name: Download processed markdown files
-      uses: actions/download-artifact@v4
-      with:
-        name: processed-markdown
-        path: resume/markdown
+      - name: Download processed markdown files
+        uses: actions/download-artifact@v4
+        with:
+          name: processed-markdown
+          path: resume/markdown
 
-    - name: Cache Pandoc and Weasyprint Dependencies
-      uses: actions/cache@v3
-      with:
-        path: /usr/local/bin/weasyprint
-        key: weasyprint-pandoc-dependencies-cache
+      - name: Cache Pandoc and Weasyprint Dependencies
+        uses: actions/cache@v3
+        with:
+          path: /usr/local/bin/weasyprint
+          key: weasyprint-pandoc-dependencies-cache
 
-    - name: Installing Dependencies (only if not cached)
-      run: |
-        sudo apt update
-        sudo apt install -y weasyprint pandoc
+      - name: Installing Dependencies (only if not cached)
+        run: |
+          sudo apt update
+          sudo apt install -y weasyprint pandoc
 
-    - name: Checking if resume/simplified directory is empty
-      id: check_empty
-      run: |
-        if [ "$(ls -A resume/simplified | grep '\.pdf$' || true)" ]; then
-          echo "empty=false" >> $GITHUB_ENV
-        else
-          echo "empty=true" >> $GITHUB_ENV
-        fi
+      - name: Checking if resume/simplified directory is empty
+        id: check_empty
+        run: |
+          if [ "$(ls -A resume/simplified | grep '\.pdf$' || true)" ]; then
+            echo "empty=false" >> $GITHUB_ENV
+          else
+            echo "empty=true" >> $GITHUB_ENV
+          fi
 
-    - name: Generating PDFs (only if resume/simplified is empty)
-      run: |
-        if [ "${{ env.empty }}" == "true" ]; then
-          CHANGED_FILES=$(ls -A resume/markdown/*.md)
-        else
-          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^resume/markdown/.*\.md$' || true)
-        fi
-        for i in $CHANGED_FILES; do
-          BASE=$(basename "$i" .md)
-          echo "Generating PDF for $BASE"
-          pandoc "$i" -o "${BASE}.html"
-          weasyprint "${BASE}.html" "resume/simplified/${BASE}.pdf"
-        done
+      - name: Generating PDFs (only if resume/simplified is empty)
+        run: |
+          if [ "${{ env.empty }}" == "true" ]; then
+            CHANGED_FILES=$(ls -A resume/markdown/*.md)
+          else
+            CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^resume/markdown/.*\.md$' || true)
+          fi
+          for i in $CHANGED_FILES; do
+            BASE=$(basename "$i" .md)
+            echo "Generating PDF for $BASE"
+            pandoc "$i" -o "${BASE}.html"
+            weasyprint "${BASE}.html" "resume/simplified/${BASE}.pdf"
+          done
 
-    - name: Commit and push updated PDFs
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Commit and push updated PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        git add resume/simplified/*.pdf
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update simplified resume PDFs (automated)"
-          git push origin master
-        fi
+          git add resume/simplified/*.pdf
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update simplified resume PDFs (automated)"
+            git push origin master
+          fi
