@@ -103,5 +103,5 @@ ___
 
 ## Contacts
 
-[LinkedIn](https://www.linkedin.com/in/rodrigo-sobral) | [GitHub](https://github.com/rodrigo-sobral) | [TryHackMe](https://tryhackme.com/p/RodrigoSobral) | [EMAIL](mailto:rodrigosobral@sapo.pt)
+[LinkedIn](https://www.linkedin.com/in/rodrigo-sobral) | [GitHub](https://github.com/rodrigo-sobral) | [TryHackMe](https://tryhackme.com/p/RodrigoSobral) | [EMAIL](mailto:contact@rodrigo-sobral.com)
 -- | -- | -- | --
