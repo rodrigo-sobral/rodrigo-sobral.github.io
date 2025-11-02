@@ -8,434 +8,490 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<meta name="description" content="Add small description of yourslef.">
-	<meta name="keywords" content="python, javascript, bash, kubernetes, docker, git, unix, devops, cybersecurity" />
-	<title>Rodrigo Sobral</title>
+		<meta name="description" content="Add small description of yourslef.">
+		<meta name="keywords"
+			content="python, javascript, bash, kubernetes, docker, git, unix, devops, cybersecurity" />
+		<title>Rodrigo Sobral</title>
 
-	<link rel="stylesheet" href="style/base.css" />
-	<link rel="stylesheet" href="style/index.css" />
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-</head>
+		<link rel="stylesheet" href="style/base.css" />
+		<link rel="stylesheet" href="style/index.css" />
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	</head>
 
-<!-- Modal for Zoomed Image -->
-<div id="imgModal" class="modal">
-	<img class="modal__content" id="imgModalContent">
-</div>
+	<!-- Modal for Zoomed Image -->
+	<div id="imgModal" class="modal">
+		<img class="modal__content" id="imgModalContent">
+	</div>
 
-<body>
-	<!-- ***** Header ***** -->
-	<header class="header" role="banner" id="top">
-		<div class="row">
-			<nav class="nav" role="navigation">
-				<ul class="nav__items">
-					<li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-					<li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-					<li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
-					<li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-					<li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
-					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="header__text-box row">
-			<div class="header__text">
-				<h1 class="heading-primary"><span>Rodrigo Sobral</span></h1>
-				<p>Cybersecurity & DevOps | CERN Engineer</p>
-				<a href="#contact" class="btn btn--pink">Get in touch</a>
-			</div>
-		</div>
-		<div class="header__watermark">Portuguese Community @ CERN</div>
-	</header>
-
-	<main role="main">
-		<!-- ***** Professional Experience ***** -->
-		<section class="client" id="experience">
+	<body>
+		<!-- ***** Header ***** -->
+		<header class="header" role="banner" id="top">
 			<div class="row">
-				<h2>Professional Experience</h2>
+				<nav class="nav" role="navigation">
+					<button class="nav__toggle" aria-controls="primary-navigation"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon" aria-hidden="true"></span>
+					</button>
+					<ul class="nav__items" id="primary-navigation">
+						<li class="nav__item"><a href="#experience"
+								class="nav__link">Experience</a></li>
+						<li class="nav__item"><a href="#education"
+								class="nav__link">Education</a></li>
+						<li class="nav__item"><a href="#certifications"
+								class="nav__link">Certifications</a></li>
+						<li class="nav__item"><a href="#projects"
+								class="nav__link">Projects</a></li>
+						<li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+						<li class="nav__item"><a href="#contact"
+								class="nav__link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__text-box row">
+				<div class="header__text">
+					<h1 class="heading-primary"><span>Rodrigo Sobral</span></h1>
+					<p>Cybersecurity & DevOps | CERN Engineer</p>
+					<a href="#contact" class="btn btn--pink">Get in touch</a>
+				</div>
+			</div>
+			<div class="header__watermark">Portuguese Community @ CERN</div>
+		</header>
+
+		<main role="main">
+			<!-- ***** Professional Experience ***** -->
+			<section class="client" id="experience">
+				<div class="row">
+					<h2>Professional Experience</h2>
+					<div class="work__boxes">
+						<!-- Each div with the work__box class is a professional experience. -->
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://home.cern" target="_blank">
+									<img src="./images/exp/cern.jpg" class="work__image linkable" alt="cern" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>CERN</h3>
+								<h4>Position: DevOps Engineer</h4>
+								<h4>From/To: January 2024 - Present</h4>
+								<h4>City: Geneva, Switzerland</h4>
+								<h4>Achievements: <a href="https://swan.docs.cern.ch/ats/intro"
+										target="_blank">ATS SWAN</a>, among other automations in the main
+									instance</h4>
+								<h4>Tech: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD</h4>
+							</div>
+						</div>
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://www.uc.pt/ucframework" target="_blank">
+									<img src="./images/exp/ucframework.jpg" class="work__image linkable"
+										alt="ucframework" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>UCFramework</h3>
+								<h4>Position: Backend Developer</h4>
+								<h4>From/To: October 2022 - October 2023</h4>
+								<h4>City: Coimbra, Portugal</h4>
+								<h4>Achievements: <a href="https://uccompetitions.uc.pt/login"
+										target="_blank">UCCompetitions</a>, <a href="https://apply.uc.pt/"
+										target="_blank">UCApply</a>, <a href="https://my.uc.pt"
+										target="_blank">MyUC</a>, UCAnalytics (internal), UCDigitalSignature
+									(internal), UCID (internal, for building access)</h4>
+								<h4>Tech: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP</h4>
+							</div>
+						</div>
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://www.superprof.com" target="_blank">
+									<img src="./images/exp/superprof.png" class="work__image linkable"
+										alt="superprof" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>Superprof</h3>
+								<h4>Position: Private Tutor</h4>
+								<h4>From/To: June 2022 - July 2023</h4>
+								<h4>City: Remote Freelance</h4>
+								<h4>Achievements: Teaching students subjects like programming,
+									networking and security, helping them to pass in their exams</h4>
+								<h4>Tech: Python, Javascript, Networking</h4>
+							</div>
+						</div>
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://www.projectbox.pt/set_locale/en" target="_blank">
+									<img src="./images/exp/projectbox.jpg" class="work__image linkable"
+										alt="projectbox" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>Project Box</h3>
+								<h4>Position: Software Analyst</h4>
+								<h4>From/To: April 2022 - September 2022</h4>
+								<h4>City: Viseu, Portugal</h4>
+								<h4>Achievements: UCNotes (internal)</h4>
+								<h4>Tech: Python, Bash, Redis, PostgreSQL</h4>
+							</div>
+						</div>
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://www.criticalsoftware.com/en" target="_blank">
+									<img src="./images/exp/criticalsoftware.jpeg"
+										class="work__image linkable"
+										alt="criticalsoftware" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>Critical Software</h3>
+								<h4>Position: Intern</h4>
+								<h4>From/To: July 2020 - August 2020</h4>
+								<h4>City: Coimbra, Portugal</h4>
+								<h4>Achievements: First steps in the software development lifecycle and
+									exposure to Agile and Waterfall methodologies, as well as the job
+									market as a whole</h4>
+								<h4>Tech: Java, Springboot</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ***** Education ***** -->
+			<section class="education" id="education">
+				<div class="row">
+					<h2>Education</h2>
+					<div class="work__boxes">
+						<div class="work__box">
+							<div class="work__text">
+								<img src="./images/edu/langs.png" class="work__image" alt="langs" />
+							</div>
+							<div class="work__image-box">
+								<h3>Languages</h3>
+								<h4>Portuguese: Native</h4>
+								<h4>English: Fluent</h4>
+								<h4>Spanish: Intermediate</h4>
+								<!-- <h4>German: Basic</h4> -->
+								<h4>French: Basic</h4>
+							</div>
+						</div>
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://www.uc.pt/en" target="_blank">
+									<img src="./images/edu/uc.png" class="work__image linkable"
+										alt="master" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>Master's Degree</h3>
+								<h4>Field: Cybersecurity</h4>
+								<h4>From/To: September 2021 - July 2023</h4>
+								<h4>City: Coimbra, Portugal</h4>
+								<h4>Topics: Security Auditing, Secure Software and Infrastructures, Risk
+									Assessment and
+									Management, Privacy, Mobile Communications, Cryptography, Law</h4>
+								<h4><a target="_blank" href="/docs/thesis.pdf"
+										class="link__text">Thesis: Analysis of user
+										behavioral patterns in cybersecurity</a></h4>
+							</div>
+						</div>
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://tryhackme.com" target="_blank">
+									<img src="./images/edu/tryhackme.png" class="work__image linkable"
+										alt="ctf" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>CTF Player</h3>
+								<h4>Field: Offensive Security</h4>
+								<h4>From/To: 2021 - Present</h4>
+								<h4>Freelance</h4>
+								<h4>Topics: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware
+									Analysis, OSINT
+								</h4>
+							</div>
+						</div>
+						<div class="work__box">
+							<div class="work__text">
+								<a href="https://www.uc.pt/en" target="_blank">
+									<img src="./images/edu/uc.png" class="work__image linkable"
+										alt="bachelor" />
+								</a>
+							</div>
+							<div class="work__image-box">
+								<h3>Bachelor's Degree</h3>
+								<h4>Field: Computer Science</h4>
+								<h4>From/To: September 2018 - July 2021</h4>
+								<h4>City: Coimbra, Portugal</h4>
+								<h4>Topics: Compilers, Databases, Algorithms, Graphical Computation, AI,
+									Distributed
+									Systems, OS, Network Protocols</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- ***** Certifications ***** -->
+		<section class="client" id="certifications">
+			<div class="row">
+				<h2>Certifications</h2>
 				<div class="work__boxes">
-					<!-- Each div with the work__box class is a professional experience. -->
 					<div class="work__box">
 						<div class="work__text">
-							<a href="https://home.cern" target="_blank">
-								<img src="./images/exp/cern.jpg" class="work__image linkable" alt="cern" />
-							</a>
+							<img src="./images/certs/k8s.png" class="work__image" alt="cka" />
 						</div>
 						<div class="work__image-box">
-							<h3>CERN</h3>
-							<h4>Position: DevOps Engineer</h4>
-							<h4>From/To: January 2024 - Present</h4>
-							<h4>City: Geneva, Switzerland</h4>
-							<h4>Achievements: <a href="https://swan.docs.cern.ch/ats/intro" target="_blank">ATS SWAN</a>, among other automations in the main instance</h4>
-							<h4>Tech: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD</h4>
+							<h3>CKA: Certified Kubernetes Administrator</h3>
+							<a
+								href="https://www.credly.com/badges/3568e385-dd7e-4cdc-a05d-3678c4d7312d"
+								target="_blank"
+								class="link__text">
+								<h4>Certification Number: LF-gevdy9r0tx</h4>
+							</a>
 						</div>
 					</div>
 					<div class="work__box">
 						<div class="work__text">
-							<a href="https://www.uc.pt/ucframework" target="_blank">
-								<img src="./images/exp/ucframework.jpg" class="work__image linkable"
-									alt="ucframework" />
-							</a>
+							<img src="./images/certs/cisco.png" class="work__image" alt="cisco" />
 						</div>
 						<div class="work__image-box">
-							<h3>UCFramework</h3>
-							<h4>Position: Backend Developer</h4>
-							<h4>From/To: October 2022 - October 2023</h4>
-							<h4>City: Coimbra, Portugal</h4>
-							<h4>Achievements: <a href="https://uccompetitions.uc.pt/login" target="_blank">UCCompetitions</a>, <a href="https://apply.uc.pt/" target="_blank">UCApply</a>, <a href="https://my.uc.pt" target="_blank">MyUC</a>, UCAnalytics (internal), UCDigitalSignature (internal), UCID (internal, for building access)</h4>
-							<h4>Tech: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP</h4>
+							<h3>Cisco Networking Academy: Multiple Certifications</h3>
+							<a
+								href="https://www.credly.com/badges/b1f9e210-bacc-4ec3-bdda-1a819cd4ad75"
+								target="_blank"
+								class="link__text">
+								<h4>Certification Number: b1f9e210-bacc-4ec3-bdda-1a819cd4ad75</h4>
+							</a>
+							<br>
+							<a
+								href="https://www.credly.com/badges/3792002e-00a5-453e-8743-df5744956738"
+								target="_blank"
+								class="link__text">
+								<h4>Certification Number: 3792002e-00a5-453e-8743-df5744956738</h4>
+							</a>
+							<br>
+							<a href="https://www.credly.com/users/rodrigo-sobral/" target="_blank"
+								class="link__text">
+								<h4>[See more]</h4>
+							</a>
 						</div>
 					</div>
 					<div class="work__box">
 						<div class="work__text">
-							<a href="https://www.superprof.com" target="_blank">
-								<img src="./images/exp/superprof.png" class="work__image linkable" alt="superprof" />
-							</a>
+							<img src="./images/certs/misc.png" class="work__image" alt="misc" />
 						</div>
 						<div class="work__image-box">
-							<h3>Superprof</h3>
-							<h4>Position: Private Tutor</h4>
-							<h4>From/To: June 2022 - July 2023</h4>
-							<h4>City: Remote Freelance</h4>
-							<h4>Achievements: Teaching students subjects like programming, networking and security, helping them to pass in their exams</h4>
-							<h4>Tech: Python, Javascript, Networking</h4>
-						</div>
-					</div>
-					<div class="work__box">
-						<div class="work__text">
-							<a href="https://www.projectbox.pt/set_locale/en" target="_blank">
-								<img src="./images/exp/projectbox.jpg" class="work__image linkable" alt="projectbox" />
-							</a>
-						</div>
-						<div class="work__image-box">
-							<h3>Project Box</h3>
-							<h4>Position: Software Analyst</h4>
-							<h4>From/To: April 2022 - September 2022</h4>
-							<h4>City: Viseu, Portugal</h4>
-							<h4>Achievements: UCNotes (internal)</h4>
-							<h4>Tech: Python, Bash, Redis, PostgreSQL</h4>
-						</div>
-					</div>
-					<div class="work__box">
-						<div class="work__text">
-							<a href="https://www.criticalsoftware.com/en" target="_blank">
-								<img src="./images/exp/criticalsoftware.jpeg" class="work__image linkable"
-									alt="criticalsoftware" />
-							</a>
-						</div>
-						<div class="work__image-box">
-							<h3>Critical Software</h3>
-							<h4>Position: Intern</h4>
-							<h4>From/To: July 2020 - August 2020</h4>
-							<h4>City: Coimbra, Portugal</h4>
-							<h4>Achievements: First steps in the software development lifecycle and exposure to Agile and Waterfall methodologies, as well as the job market as a whole</h4>
-							<h4>Tech: Java, Springboot</h4>
+							<h3>Miscellaneous</h3>
+							<a href="pages/certifications.html" class="link__text">See
+								all<span>&rarr;</span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-
-		<!-- ***** Education ***** -->
-		<section class="education" id="education">
+		<!-- ***** Projects ***** -->
+		<section class="projects" id="projects">
 			<div class="row">
-				<h2>Education</h2>
+				<h2>Latest Projects</h2>
 				<div class="work__boxes">
 					<div class="work__box">
 						<div class="work__text">
-							<img src="./images/edu/langs.png" class="work__image" alt="langs" />
+							<h3>TugaCoin</h3>
+							<p>A blockchain built from scratch with support for cryptocurrency
+								transactions, mining (proof
+								of work) and wallet settings.</p>
+							<ul class="work__list">
+								<li>NodeJS</li>
+								<li>Bootstrap</li>
+							</ul>
+							<div class="work__links">
+								<a href="https://github.com/rodrigo-sobral/Assignment_2021_Crypto"
+									target="_blank"
+									class="link__text">
+									Visit Repo <span>&rarr;</span>
+								</a>
+							</div>
 						</div>
-						<div class="work__image-box">
-							<h3>Languages</h3>
-							<h4>Portuguese: Native</h4>
-							<h4>English: Fluent</h4>
-							<h4>Spanish: Intermediate</h4>
-							<!-- <h4>German: Basic</h4> -->
-							<h4>French: Basic</h4>
-						</div>
-					</div>
-					<div class="work__box">
-						<div class="work__text">
-							<a href="https://www.uc.pt/en" target="_blank">
-								<img src="./images/edu/uc.png" class="work__image linkable" alt="master" />
-							</a>
-						</div>
-						<div class="work__image-box">
-							<h3>Master's Degree</h3>
-							<h4>Field: Cybersecurity</h4>
-							<h4>From/To: September 2021 - July 2023</h4>
-							<h4>City: Coimbra, Portugal</h4>
-							<h4>Topics: Security Auditing, Secure Software and Infrastructures, Risk Assessment and
-								Management, Privacy, Mobile Communications, Cryptography, Law</h4>
-							<h4><a target="_blank" href="/docs/thesis.pdf" class="link__text">Thesis: Analysis of user
-									behavioral patterns in cybersecurity</a></h4>
+						<div class="work__image-box" id>
+							<img src="./images/projects/tugacoin.png" class="work__image"
+								id="zoomable" alt="tugacoin" />
 						</div>
 					</div>
 					<div class="work__box">
 						<div class="work__text">
-							<a href="https://tryhackme.com" target="_blank">
-								<img src="./images/edu/tryhackme.png" class="work__image linkable" alt="ctf" />
-							</a>
+							<h3>Ethereum Todo List</h3>
+							<p>A Todo List using Solidity Smart Contracts, based on Ethereum.</p>
+							<ul class="work__list">
+								<li>NodeJS</li>
+								<li>Bootstrap</li>
+								<li>Metamask</li>
+								<li>Solidity</li>
+							</ul>
+							<div class="work__links">
+								<a href="https://github.com/rodrigo-sobral/Assignment_2021_Crypto"
+									target="_blank"
+									class="link__text">
+									Visit Repo <span>&rarr;</span>
+								</a>
+							</div>
 						</div>
-						<div class="work__image-box">
-							<h3>CTF Player</h3>
-							<h4>Field: Offensive Security</h4>
-							<h4>From/To: 2021 - Present</h4>
-							<h4>Freelance</h4>
-							<h4>Topics: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT
-							</h4>
+						<div class="work__image-box" id>
+							<img src="./images/projects/ethtodolist.png" class="work__image"
+								id="zoomable"
+								alt="ethtodolist" />
 						</div>
 					</div>
 					<div class="work__box">
 						<div class="work__text">
-							<a href="https://www.uc.pt/en" target="_blank">
-								<img src="./images/edu/uc.png" class="work__image linkable" alt="bachelor" />
-							</a>
+							<h3>Scheduler Bot</h3>
+							<p>Bot for scheduling messages on Discord (DMs and server messages).</p>
+							<ul class="work__list">
+								<li>Python</li>
+								<li>Bash</li>
+								<li>Prisma</li>
+							</ul>
+							<div class="work__links">
+								<a href="https://github.com/rodrigo-sobral/Scheduler_Bot"
+									target="_blank"
+									class="link__text">
+									Visit Repo <span>&rarr;</span>
+								</a>
+							</div>
 						</div>
-						<div class="work__image-box">
-							<h3>Bachelor's Degree</h3>
-							<h4>Field: Computer Science</h4>
-							<h4>From/To: September 2018 - July 2021</h4>
-							<h4>City: Coimbra, Portugal</h4>
-							<h4>Topics: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed
-								Systems, OS, Network Protocols</h4>
+						<div class="work__image-box" id>
+							<img src="./images/projects/schedulerbot.png" class="work__image"
+								id="zoomable"
+								alt="schedulerbot" />
+						</div>
+					</div>
+					<div class="work__box">
+						<div class="work__text">
+							<h3>Automated Classes</h3>
+							<p>
+								A mix of two small applications.<br>
+								One for accessing all different classes' links and another for signing
+								their attendance
+								sheet.
+							</p>
+							<ul class="work__list">
+								<li>Python</li>
+								<li>Bash</li>
+								<li>Selenium</li>
+							</ul>
+							<div class="work__links">
+								<a href="https://github.com/rodrigo-sobral/AutomatedClasses"
+									target="_blank"
+									class="link__text">
+									Visit Repo <span>&rarr;</span>
+								</a>
+							</div>
+						</div>
+						<div class="work__image-box" id>
+							<img style="size: 70%;" src="./images/projects/automatedclasses.png"
+								class="work__image"
+								id="zoomable" alt="automatedclasses" />
+							<img src="./images/projects/automatedclasses2.png" class="work__image"
+								id="zoomable"
+								alt="schedulerbot" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-	</main>
 
-
-	<!-- ***** Certifications ***** -->
-	<section class="client" id="certifications">
-		<div class="row">
-			<h2>Certifications</h2>
-			<div class="work__boxes">
-				<div class="work__box">
-					<div class="work__text">
-						<img src="./images/certs/k8s.png" class="work__image" alt="cka" />
-					</div>
-					<div class="work__image-box">
-						<h3>CKA: Certified Kubernetes Administrator</h3>
-						<a href="https://www.credly.com/badges/3568e385-dd7e-4cdc-a05d-3678c4d7312d" target="_blank"
-							class="link__text">
-							<h4>Certification Number: LF-gevdy9r0tx</h4>
-						</a>
-					</div>
-				</div>
-				<div class="work__box">
-					<div class="work__text">
-						<img src="./images/certs/cisco.png" class="work__image" alt="cisco" />
-					</div>
-					<div class="work__image-box">
-						<h3>Cisco Networking Academy: Multiple Certifications</h3>
-						<a href="https://www.credly.com/badges/b1f9e210-bacc-4ec3-bdda-1a819cd4ad75" target="_blank"
-							class="link__text">
-							<h4>Certification Number: b1f9e210-bacc-4ec3-bdda-1a819cd4ad75</h4>
-						</a>
-						<br>
-						<a href="https://www.credly.com/badges/3792002e-00a5-453e-8743-df5744956738" target="_blank"
-							class="link__text">
-							<h4>Certification Number: 3792002e-00a5-453e-8743-df5744956738</h4>
-						</a>
-						<br>
-						<a href="https://www.credly.com/users/rodrigo-sobral/" target="_blank" class="link__text">
-							<h4>[See more]</h4>
-						</a>
-					</div>
-				</div>
-				<div class="work__box">
-					<div class="work__text">
-						<img src="./images/certs/misc.png" class="work__image" alt="misc" />
-					</div>
-					<div class="work__image-box">
-						<h3>Miscellaneous</h3>
-						<a href="pages/certifications.html" class="link__text">See all<span>&rarr;</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- ***** Projects ***** -->
-	<section class="projects" id="projects">
-		<div class="row">
-			<h2>Latest Projects</h2>
-			<div class="work__boxes">
-				<div class="work__box">
-					<div class="work__text">
-						<h3>TugaCoin</h3>
-						<p>A blockchain built from scratch with support for cryptocurrency transactions, mining (proof
-							of work) and wallet settings.</p>
-						<ul class="work__list">
-							<li>NodeJS</li>
-							<li>Bootstrap</li>
-						</ul>
-						<div class="work__links">
-							<a href="https://github.com/rodrigo-sobral/Assignment_2021_Crypto" target="_blank"
-								class="link__text">
-								Visit Repo <span>&rarr;</span>
-							</a>
-						</div>
-					</div>
-					<div class="work__image-box" id="">
-						<img src="./images/projects/tugacoin.png" class="work__image" id="zoomable" alt="tugacoin" />
-					</div>
-				</div>
-				<div class="work__box">
-					<div class="work__text">
-						<h3>Ethereum Todo List</h3>
-						<p>A Todo List using Solidity Smart Contracts, based on Ethereum.</p>
-						<ul class="work__list">
-							<li>NodeJS</li>
-							<li>Bootstrap</li>
-							<li>Metamask</li>
-							<li>Solidity</li>
-						</ul>
-						<div class="work__links">
-							<a href="https://github.com/rodrigo-sobral/Assignment_2021_Crypto" target="_blank"
-								class="link__text">
-								Visit Repo <span>&rarr;</span>
-							</a>
-						</div>
-					</div>
-					<div class="work__image-box" id="">
-						<img src="./images/projects/ethtodolist.png" class="work__image" id="zoomable"
-							alt="ethtodolist" />
-					</div>
-				</div>
-				<div class="work__box">
-					<div class="work__text">
-						<h3>Scheduler Bot</h3>
-						<p>Bot for scheduling messages on Discord (DMs and server messages).</p>
-						<ul class="work__list">
-							<li>Python</li>
-							<li>Bash</li>
-							<li>Prisma</li>
-						</ul>
-						<div class="work__links">
-							<a href="https://github.com/rodrigo-sobral/Scheduler_Bot" target="_blank"
-								class="link__text">
-								Visit Repo <span>&rarr;</span>
-							</a>
-						</div>
-					</div>
-					<div class="work__image-box" id="">
-						<img src="./images/projects/schedulerbot.png" class="work__image" id="zoomable"
-							alt="schedulerbot" />
-					</div>
-				</div>
-				<div class="work__box">
-					<div class="work__text">
-						<h3>Automated Classes</h3>
+		<!-- ***** Resume ***** -->
+		<section class="resume" id="resume">
+			<div class="row">
+				<h2>Resume</h2>
+				<div class="about__content">
+					<div class="about__text">
 						<p>
-							A mix of two small applications.<br>
-							One for accessing all different classes' links and another for signing their attendance
-							sheet.
+							Rodrigo, a 00's boy who fell in love for coffee at an early age (too
+							early
+							perhaps), and extremely interested about Finance and Internacional
+							Economics.
+							<br>
+							<script>document.write(Math.floor(((Date.now() - new Date(2022, 4)) / (1000 * 60 * 60 * 24 * 30 * 12)) * 10) / 10)</script>+
+							professional years of experience in the IT field, with a background and
+							special interest in
+							Cybersecurity and DevOps.
 						</p>
-						<ul class="work__list">
-							<li>Python</li>
-							<li>Bash</li>
-							<li>Selenium</li>
-						</ul>
-						<div class="work__links">
-							<a href="https://github.com/rodrigo-sobral/AutomatedClasses" target="_blank"
-								class="link__text">
-								Visit Repo <span>&rarr;</span>
-							</a>
-						</div>
+						<a target="_blank" href="/resume/RodrigoSobralResume.pdf"
+							class="btn">Resume</a>
+						<a target="_blank" href=" /resume/simplified/cv-en.pdf"
+							class="btn">[Simplified version]</a>
 					</div>
-					<div class="work__image-box" id="">
-						<img style="size: 70%;" src="./images/projects/automatedclasses.png" class="work__image"
-							id="zoomable" alt="automatedclasses" />
-						<img src="./images/projects/automatedclasses2.png" class="work__image" id="zoomable"
-							alt="schedulerbot" />
+
+					<div class="about__photo-container">
+						<img class="about__photo" src="./images/pictures/rodrigo.jpeg" alt />
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-
-	<!-- ***** Resume ***** -->
-	<section class="resume" id="resume">
-		<div class="row">
-			<h2>Resume</h2>
-			<div class="about__content">
-				<div class="about__text">
+		<!-- ***** Contact ***** -->
+		<section class="contact" id="contact">
+			<div class="row">
+				<h2>Let's talk</h2>
+				<div class="contact__info">
 					<p>
-						Rodrigo, a 00's boy who fell in love for coffee at an early age (too early
-						perhaps), and extremely interested about Finance and Internacional Economics.
-						<br>
-						<script>document.write(Math.floor(((Date.now() - new Date(2022, 4)) / (1000 * 60 * 60 * 24 * 30 * 12)) * 10) / 10)</script>+
-						professional years of experience in the IT field, with a background and special interest in
-						Cybersecurity and DevOps.
+						Interested in learning more or have any questions or feedback?
+						I'm always eager to connect and learn. The easiest way to reach
+						me is by email — feel free to drop me a message!
 					</p>
-					<a target="_blank" href="/resume/RodrigoSobralResume.pdf" class="btn">Resume</a>
-					<a target="_blank" href=" /resume/simplified/cv-en.pdf" class="btn">[Simplified version]</a>
-				</div>
-
-				<div class="about__photo-container">
-					<img class="about__photo" src="./images/pictures/rodrigo.jpeg" alt="" />
+					<a href="mailto:contact@rodrigo-sobral.com"
+						class="btn">contact@rodrigo-sobral.com</a>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- ***** Contact ***** -->
-	<section class="contact" id="contact">
-		<div class="row">
-			<h2>Let's talk</h2>
-			<div class="contact__info">
-				<p>
-					Interested in learning more or have any questions or feedback?
-					I'm always eager to connect and learn. The easiest way to reach
-					me is by email — feel free to drop me a message!
-				</p>
-				<a href="mailto:contact@rodrigo-sobral.com" class="btn">contact@rodrigo-sobral.com</a>
+		<!-- ***** Footer ***** -->
+		<footer id="links" role="contentinfo" class="footer">
+			<div class="row">
+				<ul class="footer__social-links">
+					<li class="footer__social-link-item">
+						<a href="https://github.com/rodrigo-sobral/" title="Github Profile">
+							<img src="./images/icons/github.svg" class="footer__social-image"
+								alt="Github">
+						</a>
+					</li>
+					<li class="footer__social-link-item">
+						<a href="https://www.linkedin.com/in/rodrigo-sobral/"
+							title="LinkedIn Profile">
+							<img src="./images/icons/linkedin.svg" class="footer__social-image"
+								alt="LinkedIn">
+						</a>
+					</li>
+					<li class="footer__social-link-item">
+						<a href="https://www.credly.com/users/rodrigo-sobral/"
+							title="Credly Profile">
+							<img src="./images/icons/credly.svg" class="footer__social-image"
+								alt="Credly">
+						</a>
+					</li>
+					<li class="footer__social-link-item">
+						<a href="https://tryhackme.com/p/RodrigoSobral" title="TryHackMe Profile">
+							<img src="./images/icons/tryhackme.svg" class="footer__social-image"
+								alt="TryHackMe">
+						</a>
+					</li>
+				</ul>
 			</div>
-		</div>
-	</section>
+		</footer>
 
-
-	<!-- ***** Footer ***** -->
-	<footer id="links" role="contentinfo" class="footer">
-		<div class="row">
-			<ul class="footer__social-links">
-				<li class="footer__social-link-item">
-					<a href="https://github.com/rodrigo-sobral/" title="Github Profile">
-						<img src="./images/icons/github.svg" class="footer__social-image" alt="Github">
-					</a>
-				</li>
-				<li class="footer__social-link-item">
-					<a href="https://www.linkedin.com/in/rodrigo-sobral/" title="LinkedIn Profile">
-						<img src="./images/icons/linkedin.svg" class="footer__social-image" alt="LinkedIn">
-					</a>
-				</li>
-				<li class="footer__social-link-item">
-					<a href="https://www.credly.com/users/rodrigo-sobral/" title="Credly Profile">
-						<img src="./images/icons/credly.svg" class="footer__social-image" alt="Credly">
-					</a>
-				</li>
-				<li class="footer__social-link-item">
-					<a href="https://tryhackme.com/p/RodrigoSobral" title="TryHackMe Profile">
-						<img src="./images/icons/tryhackme.svg" class="footer__social-image" alt="TryHackMe">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</footer>
-
-	<a href="#top" class="back-to-top" title="Back to Top">
-		<img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
-	</a>
-	<script src="js/base.js"></script>
-</body>
+		<a href="#top" class="back-to-top" title="Back to Top">
+			<img src="./images/arrow-up.svg" alt="Back to Top"
+				class="back-to-top__image" />
+		</a>
+		<script src="js/base.js"></script>
+	</body>
 
 </html>
