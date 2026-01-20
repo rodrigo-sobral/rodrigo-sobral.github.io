@@ -22,3 +22,7 @@
   font-style: italic;
   pointer-events: none; /* ensures it doesn't block clicks */
 }
+
+img {
+  border-radius: 3%;
+}
