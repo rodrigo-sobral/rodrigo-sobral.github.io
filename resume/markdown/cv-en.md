@@ -28,7 +28,7 @@
 		</ul>
 	</td>
     <td class="profile_moldure" style="border: 0; padding: 10px;">
-		<img id="profile_pic" style="border-radius: 30px; width: 120px; height: 150px;" src="images/pictures/rodrigo3.jpg"/>
+		<img id="profile_pic" style="border-radius: 30px; width: 120px; height: 150px;" src="images/pictures/rodrigo.jpg"/>
 	</td>
   </tr>
 </table>
