@@ -20,14 +20,15 @@
     <td class="profile_moldure" style="border: 0; padding: 10px;">
 		<ul>
 			<li>Rodrigo Fernando Henriques Sobral</li>
-			<li><BIRTH_DATE> years old</li>
+			<li>Genève, Switzerland</li>
 			<li>CERN - DevOps Engineer</li>
-			<li>MSc Cybersecurity</li>
 			<li><EXPERIENCE_YEARS>+ years of professional experience</li>
+			<li>MSc Cybersecurity</li>
+			<li><BIRTH_DATE> years old</li>
 		</ul>
 	</td>
     <td class="profile_moldure" style="border: 0; padding: 10px;">
-		<img id="profile_pic" style="border-radius: 30px; width: 150px; height: 150px;" src="images/pictures/portrait.jpg"/>
+		<img id="profile_pic" style="border-radius: 30px; width: 120px; height: 150px;" src="images/pictures/rodrigo3.jpg"/>
 	</td>
   </tr>
 </table>
@@ -105,5 +106,5 @@ ___
 
 ## Contacts
 
-[EMAIL](mailto:contact@rodrigo-sobral.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-sobral)
--- | --
+[EMAIL](mailto:contact@rodrigo-sobral.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-sobral) | 📞 +41 78 210 90 28
+-- | -- | --
