@@ -26,10 +26,6 @@
 			<li>MSc Cybersecurity</li>
 			<li><BIRTH_DATE> years old</li>
 		</ul>
-	</td>
-    <td class="profile_moldure" style="border: 0; padding: 10px;">
-		<img id="profile_pic" style="border-radius: 30px; width: 120px; height: 150px;" src="images/pictures/rodrigo.jpg"/>
-	</td>
   </tr>
 </table>
 
@@ -89,7 +85,7 @@
 
 ---
 
-## Projects
+## Small Personal Projects
 
 - [TugaCoin](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
   - **Tech**: NodeJS, Bootstrap
