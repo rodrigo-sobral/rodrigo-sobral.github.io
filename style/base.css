@@ -716,6 +716,12 @@ body.menu-open {
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
 }
+.about__photo {
+    width: 80%;
+}
+.about__text {
+    margin-right: 20%;
+}
 
 @media(min-width: 901px) {
     .about__text {
