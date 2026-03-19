@@ -7,7 +7,7 @@
 ## Experience
 
 ### Jan 2024 – Present &nbsp;·&nbsp; DevOps Engineer — [**CERN**](https://home.cern), Geneva, Switzerland
-Initially allocated to a partnership's project between the [IT](https://information-technology.web.cern.ch) and [ATS](https://ats.web.cern.ch) departments, created with the main goal of developing a new and internal version of [SWAN](https://swan.cern.ch), named [ATS SWAN](https://swan.docs.cern.ch/ats/). After concluding and anouncing it in several presentations ([CCSC](https://indico.cern.ch/event/1580446/timetable/?view=standard_numbered)), I started working on the maintenance and improvement of the general SWAN, and on the development of new features for it.
+Initially allocated to a partnership's project between the [IT](https://information-technology.web.cern.ch) and [ATS](https://ats.web.cern.ch) departments, created with the main goal of developing a new and internal version of [SWAN](https://swan.cern.ch), named [ATS SWAN](https://swan.docs.cern.ch/ats/). After concluding and anouncing it in several presentations ([ITCSC](https://indico.cern.ch/event/1580446/timetable/?view=standard_numbered)), I started working on the maintenance and improvement of the general SWAN, and on the development of new features for it.
 `Python` `Jupyter` `Bash` `Docker` `Helm` `Kubernetes` `ArgoCD` `Grafana` `Prometheus` `Terraform`
 
 ### Sep 2022 – Dec 2023 &nbsp;·&nbsp; Backend Developer — [**UCNext**](https://www.uc.pt/ucframework), Coimbra, Portugal
@@ -31,7 +31,8 @@ One month internship where I got my first contact with the industry, working on 
 ## Education
 
 ### 2021 – 2023 &nbsp;·&nbsp; M.Sc. Cybersecurity — University of Coimbra
-Security Auditing · Secure Software and Infrastructures · Risk Assessment and Management · Privacy · Mobile Communications · Cryptography · Law · etc
+Thesis: [Analysis of user behavioral patterns in cybersecurity](https://rodrigo-sobral.com/docs/thesis.pdf)
+Security Auditing · Logging · Monitoring · Incident Response · Risk Assessment and Management · Privacy · Secure Software and Infrastructures · Mobile Communications · Cryptography · Law · etc
 
 ### 2019 – 2025 &nbsp;·&nbsp; CTF Player (offensive security training) — [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral)
 Pentesting · Kill Chain · MITRE ATT&CK · Exploitation · Malware Analysis · OSINT · etc

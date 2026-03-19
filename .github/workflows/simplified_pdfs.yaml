@@ -19,7 +19,7 @@ jobs:
 
       - name: Compute dynamic placeholders
         run: |
-          START_YEAR=2022 START_MONTH=3
+          START_YEAR=2022 START_MONTH=4
           CY=$(date +%Y) CM=$(date +%-m)
           EXP=$(echo "scale=1; (($CY - $START_YEAR) * 12 + ($CM - $START_MONTH)) / 12" | bc)
           sed -i "s/<EXPERIENCE_YEARS>/$EXP/g" resume/markdown/cv-en.md
