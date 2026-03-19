@@ -2,140 +2,42 @@ name: Generate Simplified Resume PDFs from Markdown
 
 on:
   push:
-    branches:
-      - master
-    # Run when markdown files or workflow itself are updated
+    branches: [master]
     paths:
-      - "resume/markdown/*.md"
+      - "resume/markdown/cv-en.md"
       - ".github/workflows/simplified_pdfs.yaml"
+
 permissions:
   contents: write
 
 jobs:
-  process_markdown:
+  build:
     runs-on: ubuntu-latest
-    outputs:
-      changed_files: ${{ steps.get_changed.outputs.changed_files }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
+      - uses: actions/checkout@v4
 
-      - name: Get changed markdown files
-        id: get_changed
+      - name: Compute dynamic placeholders
         run: |
-          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^resume/markdown/.*\.md$' | tr '\n' ' ' || true)
-          echo "Changed files: $CHANGED_FILES"
-          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          START_YEAR=2022 START_MONTH=3
+          CY=$(date +%Y) CM=$(date +%-m)
+          EXP=$(echo "scale=1; (($CY - $START_YEAR) * 12 + ($CM - $START_MONTH)) / 12" | bc)
+          sed -i "s/<EXPERIENCE_YEARS>/$EXP/g" resume/markdown/cv-en.md
 
-      - name: Replace <BIRTH_DATE> with age
-        if: ${{ steps.get_changed.outputs.changed_files != '' }}
+      - name: Install dependencies
         run: |
-          BIRTH_YEAR=2000
-          BIRTH_MONTH=1
-          BIRTH_DAY=3
-          CURRENT_YEAR=$(date +%Y)
-          CURRENT_MONTH=$(date +%-m)
-          CURRENT_DAY=$(date +%-d)
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            libpango-1.0-0 libpangocairo-1.0-0 libcairo2 libgdk-pixbuf2.0-0 shared-mime-info
+          pip install markdown==3.7 weasyprint==61.2 pydyf==0.9.0
 
-          # Calculate age precisely
-          AGE=$((CURRENT_YEAR - BIRTH_YEAR))
-          if [ "$CURRENT_MONTH" -lt "$BIRTH_MONTH" ] || { [ "$CURRENT_MONTH" -eq "$BIRTH_MONTH" ] && [ "$CURRENT_DAY" -lt "$BIRTH_DAY" ]; }; then
-            AGE=$((AGE - 1))
-          fi
+      - name: Build PDF
+        run: python .github/build_cv.py --input=resume/markdown/cv-en.md --output=resume/simplified/cv-en.pdf
 
-          echo "Calculated age: $AGE years"
-
-          for file in ${{ steps.get_changed.outputs.changed_files }}; do
-            echo "Updating $file"
-            sed -i "s/<BIRTH_DATE>/$AGE/g" "$file"
-          done
-
-      - name: Replace <EXPERIENCE_YEARS> with experience years
-        if: ${{ steps.get_changed.outputs.changed_files != '' }}
+      - name: Commit and push
         run: |
-          START_YEAR=2022
-          START_MONTH=3
-          CURRENT_YEAR=$(date +%Y)
-          CURRENT_MONTH=$(date +%-m)
-          TOTAL_MONTHS=$(( (CURRENT_YEAR - START_YEAR) * 12 + (CURRENT_MONTH - START_MONTH) ))
-          EXPERIENCE_YEARS=$(echo "scale=1; $TOTAL_MONTHS / 12" | bc)
-
-          echo "Calculated experience: $EXPERIENCE_YEARS years"
-
-          for file in ${{ steps.get_changed.outputs.changed_files }}; do
-            echo "Updating $file"
-            sed -i "s/<EXPERIENCE_YEARS>/$EXPERIENCE_YEARS/g" "$file"
-          done
-
-      - name: Upload processed markdown files
-        if: ${{ steps.get_changed.outputs.changed_files != '' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-markdown
-          path: ${{ steps.get_changed.outputs.changed_files }}
-
-  generate_pdfs:
-    runs-on: ubuntu-latest
-    needs: process_markdown
-    if: ${{ needs.process_markdown.outputs.changed_files != '' }}
-    steps:
-      - name: Checkout repository (fetch the last 2 commits)
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-
-      - name: Download processed markdown files
-        uses: actions/download-artifact@v4
-        with:
-          name: processed-markdown
-          path: resume/markdown
-
-      - name: Cache Pandoc and Weasyprint Dependencies
-        uses: actions/cache@v3
-        with:
-          path: /usr/local/bin/weasyprint
-          key: weasyprint-pandoc-dependencies-cache
-
-      - name: Installing Dependencies (only if not cached)
-        run: |
-          sudo apt update
-          sudo apt install -y weasyprint pandoc
-
-      - name: Checking if resume/simplified directory is empty
-        id: check_empty
-        run: |
-          if [ "$(ls -A resume/simplified | grep '\.pdf$' || true)" ]; then
-            echo "empty=false" >> $GITHUB_ENV
-          else
-            echo "empty=true" >> $GITHUB_ENV
-          fi
-
-      - name: Generating PDFs (only if resume/simplified is empty)
-        run: |
-          if [ "${{ env.empty }}" == "true" ]; then
-            CHANGED_FILES=$(ls -A resume/markdown/*.md)
-          else
-            CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^resume/markdown/.*\.md$' || true)
-          fi
-          for i in $CHANGED_FILES; do
-            BASE=$(basename "$i" .md)
-            echo "Generating PDF for $BASE"
-            pandoc "$i" -o "${BASE}.html"
-            weasyprint "${BASE}.html" "resume/simplified/${BASE}.pdf"
-          done
-
-      - name: Commit and push updated PDFs
-        run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add resume/simplified/*.pdf
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update simplified resume PDFs (automated)"
-            git push origin master
-          fi
+          git add resume/simplified/cv-en.pdf
+          git diff --cached --quiet || git commit -m "ci: rebuild cv-en.pdf [skip ci]"
+          git push

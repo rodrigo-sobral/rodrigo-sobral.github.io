@@ -1,78 +1,43 @@
-<style>
-  .header_table {
-    border-collapse: collapse;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  .profile_moldure {
-    border: 0;
-    padding: 10px;
-  }
-  #profile_pic {
-    border-radius: 30px;
-    width: 150px;
-    height: 150px;
-  }
-</style>
+# Rodrigo Sobral
 
-<table class="header_table" style="border-collapse: collapse; max-width: 500px; margin: 0 auto;">
-  <tr>
-    <td class="profile_moldure" style="border: 0; padding: 10px;">
-		<ul>
-			<li>Rodrigo Fernando Henriques Sobral</li>
-			<li>Genève, Switzerland</li>
-			<li>CERN - DevOps Engineer</li>
-			<li><EXPERIENCE_YEARS>+ years of professional experience</li>
-			<li>MSc Cybersecurity</li>
-			<li><BIRTH_DATE> years old</li>
-		</ul>
-  </tr>
-</table>
+**Location:** Geneva, Switzerland &nbsp;|&nbsp; **Role:** DevOps Engineer &nbsp;|&nbsp; **Experience:** <EXPERIENCE_YEARS>+ years &nbsp;|&nbsp; **Education:** M.Sc. Cybersecurity
 
 ---
 
 ## Experience
 
-- **DevOps Engineer** at [**CERN**](https://home.cern) (Jan 2024 – Present)
-  - **Tech**: Python, Jupyter, Bash, Docker, Helm, Kubernetes, ArgoCD, Grafana
+### Jan 2024 – Present &nbsp;·&nbsp; DevOps Engineer — [**CERN**](https://home.cern), Geneva, Switzerland
+Initially allocated to a partnership's project between the [IT](https://information-technology.web.cern.ch) and [ATS](https://ats.web.cern.ch) departments, created with the main goal of developing a new and internal version of [SWAN](https://swan.cern.ch), named [ATS SWAN](https://swan.docs.cern.ch/ats/). After concluding and anouncing it in several presentations ([CCSC](https://indico.cern.ch/event/1580446/timetable/?view=standard_numbered)), I started working on the maintenance and improvement of the general SWAN, and on the development of new features for it.
+`Python` `Jupyter` `Bash` `Docker` `Helm` `Kubernetes` `ArgoCD` `Grafana` `Prometheus` `Terraform`
 
-- **Back-end Developer** at [**UCNext**](https://www.uc.pt/ucframework) (Sep 2022 – Jan 2024)
-  - **Tech**: Python, Bash, Redis, PostgreSQL, Grafana, AWS S3, SAP
+### Sep 2022 – Dec 2023 &nbsp;·&nbsp; Backend Developer — [**UCNext**](https://www.uc.pt/ucframework), Coimbra, Portugal
+Hired by the client I was working for as a Analyst Developer, I kept working on the same projects and started some new ones, like: [UCCompetitions](https://uccompetitions.uc.pt/login), [UCApply](https://apply.uc.pt/), [MyUC](https://my.uc.pt), UCAnalytics (internal), UCDigitalSignature (internal), UCID (internal for building access)
+`Python` `Bash` `Redis` `PostgreSQL` `REST API` `Grafana` `AWS S3` `SAP`
 
-- **Private Tutor** at [**Superprof**](https://www.superprof.com) (Jun 2022 – Sep 2022)
-  - **Topics**: Python, Javascript, Networking, Algorithms, Databases, Data Structures, Operating Systems
+### Jun 2022 – Sep 2023 &nbsp;·&nbsp; Private Tutor — [**Superprof**](https://www.superprof.com), Remote
+Gave remote private lessons to computer science students in various subjects.
+`Python` `JavaScript` `Networking` `Algorithms` `Databases` `Data Structures` `Operating Systems`
 
-- **Analyst Developer** at [**Project Box**](https://projectbox.pt) (Apr 2022 – Jun 2022)
-  - **Tech**: Python, Bash, Redis, PostgreSQL
+### Apr 2022 – Sep 2022 &nbsp;·&nbsp; Analyst Developer — [**Project Box**](https://projectbox.pt), Viseu, Portugal
+Allocated to multiple consulting projects for a client, as a Backend Developer, working on the development of new features, maintenance of existing ones and refactoring of legacy code, in a microservices architecture.
+`Python` `Bash` `Redis` `PostgreSQL` `REST API`
 
-- **Summer Intern** at [**Critical Software**](https://www.criticalsoftware.com) (Aug 2020)
-  - **Tech**: Java, Springboot
+### Aug 2020 &nbsp;·&nbsp; Summer Intern — [**Critical Software**](https://www.criticalsoftware.com), Coimbra, Portugal
+One month internship where I got my first contact with the industry, working on a prototype, following the software development lifecycle, and using Waterfall and Agile methodologies.
+`Java` `Spring Boot` `Waterfall` `Agile` `Scrum` `Kanban`
 
 ---
 
 ## Education
 
-- Master's Degree in **Cybersecurity** at University of Coimbra (2023)
-    - **Thesis**: Analysis of user behavioral patterns in cybersecurity.
-    - **Topics**: Security Auditing, Secure Software and Infrastructures, Risk Assessment and Management, Privacy, Mobile Communications, Cryptography, Law, etc
+### 2021 – 2023 &nbsp;·&nbsp; M.Sc. Cybersecurity — University of Coimbra
+Security Auditing · Secure Software and Infrastructures · Risk Assessment and Management · Privacy · Mobile Communications · Cryptography · Law · etc
 
-- Bachelor's Degree in **Computer Science** at University of Coimbra (2021)
-    - **Topics**: Compilers, Databases, Algorithms, Graphical Computation, AI, Distributed Systems, OS, Network Protocols, etc
+### 2019 – 2025 &nbsp;·&nbsp; CTF Player (offensive security training) — [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral)
+Pentesting · Kill Chain · MITRE ATT&CK · Exploitation · Malware Analysis · OSINT · etc
 
-- CTF exercises at [**TryHackMe**](https://tryhackme.com/p/RodrigoSobral) (offensive security training, since 2019).
-  - **Topics**: Pentesting, Kill Chain, MITRE ATT&CK, Exploitation, Malware Analysis, OSINT, etc
-
----
-
-## Languages
-
-<tr>
-	<td>EN (Fluent)</td>
-	<td>PT (Fluent)</td>
-	<td>ES (Intermediate)</td>
-	<td>FR (Basic)</td>
-	<!-- <td>DE (Basic)</td> -->
-</tr>
+### 2018 – 2021 &nbsp;·&nbsp; B.Sc. Computer Science — University of Coimbra
+Compilers · Databases · Algorithms · Graphical Computation · Data Structures · Linear Algebra · Statistics · AI · Distributed Systems · Operating Systems · Network Protocols · etc
 
 ---
 
@@ -85,22 +50,36 @@
 
 ---
 
-## Small Personal Projects
+## Projects
 
-- [TugaCoin](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
-  - **Tech**: NodeJS, Bootstrap
-- [Ethereum Todo List](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
-  - **Tech**: NodeJS, Bootstrap, Metamask, Solidity
-- [Small Personal Projects](https://github.com/rodrigo-sobral/small-personal-projects)
-  - **Tech**: Python, C, Electron, Docker
-- [Scheduler Bot](https://github.com/rodrigo-sobral/Scheduler_Bot)
-  - **Tech**: Python, Bash, Prisma
-- [Automated Classes](https://github.com/rodrigo-sobral/AutomatedClasses)
-  - **Tech**: Python, Bash, Selenium
+### [TugaCoin](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
+Built a cryptocurrency from scratch, implementing the blockchain system, mining algorithms, wallets, and a web interface for transactions.
+`NodeJS` `Bootstrap`
 
-___
+### [Ethereum Todo List](https://github.com/rodrigo-sobral/Assignment_2021_Crypto)
+Created a decentralized application (dApp) on the Ethereum blockchain, allowing users to manage their tasks securely and transparently.
+`NodeJS` `Bootstrap` `Metamask` `Solidity`
 
-## Contacts
+### [Small Personal Projects](https://github.com/rodrigo-sobral/small-personal-projects)
+Bundle of small personal projects, including a infrastructure with multiple microservices, a web scraper, MacOS taskbar plugins, standalone applications, and more.
+`Python` `Bash` `C` `Electron` `Docker-Compose`
 
-[EMAIL](mailto:contact@rodrigo-sobral.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-sobral) | 📞 +41 78 210 90 28
--- | -- | --
+### [Scheduler Bot](https://github.com/rodrigo-sobral/Scheduler_Bot)
+Designed a Discord bot for scheduling messages, wether to an user or to a group, via CLI commands, with a simple interface to manage the scheduled messages.
+`Python` `Bash` `Prisma`
+
+### [Automated Classes](https://github.com/rodrigo-sobral/AutomatedClasses)
+
+`Python` `Bash` `Selenium`
+
+---
+
+## Languages
+
+**Portuguese** — Native &nbsp;|&nbsp; **English** — Fluent (C1) &nbsp;|&nbsp; **Spanish** — Conversational (B2) &nbsp;|&nbsp; **French** — Basic (A2)
+
+---
+
+## Contact
+
+**Email:** [contact@rodrigo-sobral.com](mailto:contact@rodrigo-sobral.com) &nbsp;|&nbsp; **Phone:** +41 78 210 90 28 &nbsp;|&nbsp; **Portfolio:** [rodrigo-sobral.com](https://rodrigo-sobral.com) &nbsp;|&nbsp; **LinkedIn:** [linkedin.com/in/rodrigo-sobral](https://www.linkedin.com/in/rodrigo-sobral) &nbsp;|&nbsp; **GitHub:** [github.com/rodrigo-sobral](https://github.com/rodrigo-sobral)
