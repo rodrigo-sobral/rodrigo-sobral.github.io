@@ -44,6 +44,7 @@ Compilers · Databases · Algorithms · Graphical Computation · Data Structures
 
 ## Certifications
 
+- [CKS: Certified Kubernetes Security Specialist](https://www.credly.com/badges/550c116c-22e4-40b7-93e1-fffb42925add)
 - [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/3568e385-dd7e-4cdc-a05d-3678c4d7312d)
 - [Junior Cybersecurity Analyst Career Path](https://www.credly.com/badges/b1f9e210-bacc-4ec3-bdda-1a819cd4ad75)
 - [Ethical Hacker](https://www.credly.com/badges/3792002e-00a5-453e-8743-df5744956738)
