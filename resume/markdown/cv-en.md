@@ -1,6 +1,6 @@
 # Rodrigo Sobral
 
-**Location:** Geneva, Switzerland &nbsp;|&nbsp; **Role:** DevOps Engineer &nbsp;|&nbsp; **Experience:** <EXPERIENCE_YEARS>+ years &nbsp;|&nbsp; **Education:** M.Sc. Cybersecurity
+**Location:** Geneva, Switzerland &nbsp;|&nbsp; **Role:** DevOps Engineer &nbsp;|&nbsp; **Education:** M.Sc. Cybersecurity
 
 ---
 
@@ -78,10 +78,10 @@ Designed a Discord bot for scheduling messages, wether to an user or to a group,
 
 ## Languages
 
-**Portuguese** — Native &nbsp;|&nbsp; **English** — Fluent (C1) &nbsp;|&nbsp; **Spanish** — Conversational (B2) &nbsp;|&nbsp; **French** — Basic (A2)
+**Portuguese** — Native &nbsp;|&nbsp; **English** — Fluent &nbsp;|&nbsp; **Spanish** — Intermediate &nbsp;|&nbsp; **French** — Basic (A2)
 
 ---
 
 ## Contact
 
-**Email:** [contact@rodrigo-sobral.com](mailto:contact@rodrigo-sobral.com) &nbsp;|&nbsp; **Phone:** +41 78 210 90 28 &nbsp;|&nbsp; **Portfolio:** [rodrigo-sobral.com](https://rodrigo-sobral.com) &nbsp;|&nbsp; **LinkedIn:** [linkedin.com/in/rodrigo-sobral](https://www.linkedin.com/in/rodrigo-sobral) &nbsp;|&nbsp; **GitHub:** [github.com/rodrigo-sobral](https://github.com/rodrigo-sobral)
+**Email:** [contact@rodrigo-sobral.com](mailto:contact@rodrigo-sobral.com) &nbsp;|&nbsp; **Phone:** +41 78 210 90 28 &nbsp;|&nbsp; **Portfolio:** [rodrigo-sobral.com](https://rodrigo-sobral.com) &nbsp;|&nbsp; **LinkedIn:** [rodrigo-sobral](https://www.linkedin.com/in/rodrigo-sobral) &nbsp;|&nbsp; **GitHub:** [rodrigo-sobral](https://github.com/rodrigo-sobral)
