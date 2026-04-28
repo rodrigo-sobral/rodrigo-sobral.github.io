@@ -22,7 +22,7 @@ Gave remote private lessons to computer science students in various subjects.
 Allocated to multiple consulting projects for a client, as a Backend Developer, working on the development of new features, maintenance of existing ones and refactoring of legacy code, in a microservices architecture.
 `Python` `Bash` `Redis` `PostgreSQL` `REST API`
 
-### Aug 2020 &nbsp;·&nbsp; Summer Intern — [**Critical Software**](https://www.criticalsoftware.com), Coimbra, Portugal
+### Aug 2020 - Sep 2020 &nbsp;·&nbsp; Summer Intern — [**Critical Software**](https://www.criticalsoftware.com), Coimbra, Portugal
 One month internship where I got my first contact with the industry, working on a prototype, following the software development lifecycle, and using Waterfall and Agile methodologies.
 `Java` `Spring Boot` `Waterfall` `Agile` `Scrum` `Kanban`
 
