@@ -10,11 +10,11 @@
 Initially allocated to a partnership's project between the [IT](https://information-technology.web.cern.ch) and [ATS](https://ats.web.cern.ch) departments, created with the main goal of developing a new and internal version of [SWAN](https://swan.cern.ch), named [ATS SWAN](https://swan.docs.cern.ch/ats/). After concluding and anouncing it in several presentations ([ITCSC](https://indico.cern.ch/event/1580446/timetable/?view=standard_numbered)), I started working on the maintenance and improvement of the general SWAN, and on the development of new features for it.
 `Python` `Jupyter` `Bash` `Docker` `Helm` `Kubernetes` `ArgoCD` `Grafana` `Prometheus` `Terraform`
 
-### Sep 2022 – Dec 2023 &nbsp;·&nbsp; Backend Developer — [**UCNext**](https://www.uc.pt/ucframework), Coimbra, Portugal
+### Oct 2022 – Oct 2023 &nbsp;·&nbsp; Backend Developer — [**UCNext**](https://www.uc.pt/ucframework), Coimbra, Portugal
 Hired by the client I was working for as a Analyst Developer, I kept working on the same projects and started some new ones, like: [UCCompetitions](https://uccompetitions.uc.pt/login), [UCApply](https://apply.uc.pt/), [MyUC](https://my.uc.pt), UCAnalytics (internal), UCDigitalSignature (internal), UCID (internal for building access)
 `Python` `Bash` `Redis` `PostgreSQL` `REST API` `Grafana` `AWS S3` `SAP`
 
-### Jun 2022 – Sep 2023 &nbsp;·&nbsp; Private Tutor — [**Superprof**](https://www.superprof.com), Remote
+### Jun 2022 – Jul 2023 &nbsp;·&nbsp; Private Tutor — [**Superprof**](https://www.superprof.com), Remote
 Gave remote private lessons to computer science students in various subjects.
 `Python` `JavaScript` `Networking` `Algorithms` `Databases` `Data Structures` `Operating Systems`
 
@@ -22,7 +22,7 @@ Gave remote private lessons to computer science students in various subjects.
 Allocated to multiple consulting projects for a client, as a Backend Developer, working on the development of new features, maintenance of existing ones and refactoring of legacy code, in a microservices architecture.
 `Python` `Bash` `Redis` `PostgreSQL` `REST API`
 
-### Aug 2020 - Sep 2020 &nbsp;·&nbsp; Summer Intern — [**Critical Software**](https://www.criticalsoftware.com), Coimbra, Portugal
+### Jul 2020 - Aug 2020 &nbsp;·&nbsp; Summer Intern — [**Critical Software**](https://www.criticalsoftware.com), Coimbra, Portugal
 One month internship where I got my first contact with the industry, working on a prototype, following the software development lifecycle, and using Waterfall and Agile methodologies.
 `Java` `Spring Boot` `Waterfall` `Agile` `Scrum` `Kanban`
 
