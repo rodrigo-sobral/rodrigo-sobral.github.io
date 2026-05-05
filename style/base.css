@@ -715,6 +715,7 @@ body.menu-open {
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
+    position: relative; /* needed for overlay label positioning */
 }
 .about__photo {
     width: 80%;
@@ -731,6 +732,35 @@ body.menu-open {
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
+    }
+}
+
+/* overlay label on about photo (bottom-left). Falls back below image on very small screens */
+.about__photo-label {
+    position: absolute;
+    left: 0rem;
+    bottom: 0.6rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+    font-style: italic;
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 4;
+    pointer-events: none;
+}
+
+@media (max-width: 420px) {
+    .about__photo-label {
+        position: static;
+        display: inline-block;
+        margin-top: 0.8rem;
+        background: transparent;
+        color: var(--white-1);
+        padding: 0;
+        font-size: 1.4rem;
+        border-radius: 0;
+        pointer-events: auto;
     }
 }
 
