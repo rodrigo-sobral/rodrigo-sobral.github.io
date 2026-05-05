@@ -1,11 +1,11 @@
-name: Generate Simplified Resume PDFs from Markdown
+name: Generate Resume from Markdown
 
 on:
   push:
     branches: [master]
     paths:
-      - "resume/markdown/cv-en.md"
-      - ".github/workflows/simplified_pdfs.yaml"
+      - "resume/RodrigoSobral.md"
+      - ".github/build_cv.py"
 
 permissions:
   contents: write
@@ -15,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Compute dynamic placeholders
         run: |
           START_YEAR=2022 START_MONTH=4
           CY=$(date +%Y) CM=$(date +%-m)
           EXP=$(echo "scale=1; (($CY - $START_YEAR) * 12 + ($CM - $START_MONTH)) / 12" | bc)
-          sed -i "s/<EXPERIENCE_YEARS>/$EXP/g" resume/markdown/cv-en.md
+          sed -i "s/<EXPERIENCE_YEARS>/$EXP/g" resume/RodrigoSobral.md
 
       - name: Install dependencies
         run: |
@@ -32,12 +32,12 @@ jobs:
           pip install markdown==3.7 weasyprint==61.2 pydyf==0.9.0
 
       - name: Build PDF
-        run: python .github/build_cv.py --input=resume/markdown/cv-en.md --output=resume/simplified/RodrigoSobral.pdf
+        run: python .github/build_cv.py --input=resume/RodrigoSobral.md --output=resume/RodrigoSobral.pdf
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add resume/simplified/RodrigoSobral.pdf
+          git add resume/RodrigoSobral.pdf
           git diff --cached --quiet || git commit -m "ci: rebuild RodrigoSobral.pdf [skip ci]"
           git push
