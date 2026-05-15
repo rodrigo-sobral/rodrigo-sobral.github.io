@@ -47,6 +47,7 @@ h1 {
     letter-spacing: -0.3pt;
     color: #0f3460;
     margin-bottom: 2pt;
+    text-align: center;
 }
 
 /* Bold meta line directly under h1 */
@@ -54,6 +55,7 @@ h1 + p {
     font-size: 8pt;
     color: #444;
     margin-bottom: 5pt;
+    text-align: center;
 }
 
 hr {
