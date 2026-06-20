@@ -89,6 +89,7 @@ h3 {
 /* ── Body paragraphs ────────────────────────────────────────────── */
 p {
     margin-bottom: 2pt;
+    text-align: justify;
 }
 
 /* ── Lists ──────────────────────────────────────────────────────── */
@@ -99,6 +100,7 @@ ul {
 
 li {
     margin-bottom: 1pt;
+    text-align: justify;
 }
 
 /* ── Tech / tag pills ───────────────────────────────────────────── */
