@@ -17,6 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.2
 
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            bc \
+            libpango-1.0-0 libpangocairo-1.0-0 libcairo2 libgdk-pixbuf2.0-0 shared-mime-info
+          pip install --break-system-packages --ignore-installed markdown==3.7 weasyprint==61.2 pydyf==0.9.0
+
       - name: Compute dynamic placeholders
         run: |
           START_YEAR=2022 START_MONTH=4
@@ -24,17 +32,12 @@ jobs:
           EXP=$(echo "scale=1; (($CY - $START_YEAR) * 12 + ($CM - $START_MONTH)) / 12" | bc)
           sed -i "s/<EXPERIENCE_YEARS>/$EXP/g" resume/RodrigoSobral.md
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends \
-            libpango-1.0-0 libpangocairo-1.0-0 libcairo2 libgdk-pixbuf2.0-0 shared-mime-info
-          pip install markdown==3.7 weasyprint==61.2 pydyf==0.9.0
-
       - name: Build PDF
         run: python .github/build_cv.py --input=resume/RodrigoSobral.md --output=resume/RodrigoSobral.pdf
 
       - name: Commit and push
+        # skip when running locally with act
+        if: ${{ !env.ACT }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
