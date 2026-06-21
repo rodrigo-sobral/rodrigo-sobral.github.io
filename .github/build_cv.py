@@ -18,8 +18,16 @@ from weasyprint import HTML, CSS
 def md_to_html(md_path: Path) -> str:
     text = md_path.read_text(encoding="utf-8")
     body = markdown.markdown(text, extensions=["extra", "nl2br"])
-    # Wrap inline-code tags that follow a <br> into a tech-pill span
     body = re.sub(r"<code>([^<]+)</code>", r'<span class="tag">\1</span>', body)
+
+    # Merge h4 immediately following h3 into a flex row, h4 on the right
+    body = re.sub(
+        r"<h3>(.*?)</h3>\s*<h4>(.*?)</h4>",
+        r'<h3><span class="h3-main">\1</span><span class="h3-sub">\2</span></h3>',
+        body,
+        flags=re.DOTALL,
+    )
+
     return body
 
 
@@ -84,6 +92,17 @@ h3 {
     color: #1a1a2e;
     margin-top: 4pt;
     margin-bottom: 1pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.h3-main { text-align: left; }
+
+.h3-sub {
+    text-align: right;
+    font-size: 8.2pt;
+    color: #2e3f6e;
 }
 
 /* ── Body paragraphs ────────────────────────────────────────────── */
