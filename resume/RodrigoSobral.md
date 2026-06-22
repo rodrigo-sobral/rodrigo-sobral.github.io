@@ -24,7 +24,7 @@ DevOps Engineer with a strong foundation in Software Engineering and a specializ
 
 ## Experience
 
-### DevOps Engineer &nbsp;·&nbsp; <u>[**CERN**](https://home.cern)</u>
+### <u>[**CERN**](https://home.cern)</u> &nbsp;·&nbsp; DevOps Engineer
 #### Jan 2024 – Present &nbsp;·&nbsp; Geneva, Switzerland
 
 - Led a cross-departmental partnership project between the <u>[**IT**](https://information-technology.web.cern.ch)</u> and <u>[**ATS**](https://ats.web.cern.ch)</u> departments at CERN (one of the world's largest and most complex scientific computing environments) to develop, deploy, and operate an internal variant of <u>[**SWAN**](https://cern.ch/swan)</u> (Service for Web-based ANalysis), a large-scale Jupyter-based data analysis platform, bringing new features like <u>[Custom Software Environments](https://swan.docs.cern.ch/session/custom_envs/)</u> and serving tens of users across the ATS department
@@ -34,8 +34,6 @@ DevOps Engineer with a strong foundation in Software Engineering and a specializ
 - Maintained **observability pipelines** (Grafana, Prometheus) to monitor platform health and address incidents, by providing **user support** and issue resolution via ServiceNow and JIRA
 - Supervised interns and new team members, providing **mentorship** and guidance on the platform's architecture, best practices, and operational procedures
 
-<br>
-
 ### <u>[**UCNext**](https://www.uc.pt/ucframework)</u> &nbsp;·&nbsp; Backend Developer
 #### Oct 2022 – Oct 2023 &nbsp;·&nbsp; Coimbra, Portugal
 
@@ -43,22 +41,16 @@ DevOps Engineer with a strong foundation in Software Engineering and a specializ
 - Led the backend development of several production platforms: <u>[**UCCompetitions**](https://uccompetitions.uc.pt/login)</u>, <u>[**UCApply**](https://apply.uc.pt/)</u>, <u>[**MyUC**](https://my.uc.pt)</u>, and internal tools including **UCAnalytics** (subject for <u>[research paper](https://rodrigo-sobral.com/docs/thesis.pdf)</u>), **UCDigitalSignature**, and **UCID** (building access control)
 - Designed and implemented **REST APIs** integrated with **PostgreSQL**, **Redis** caching layers, **AWS S3**, and **SAP** systems
 
-<br>
-
 ### <u>[**Superprof**](https://www.superprof.com)</u> &nbsp;·&nbsp; Private Tutor 
 #### Jun 2022 – Jul 2023 &nbsp;·&nbsp; Remote
 
 - Delivered remote one-on-one tutoring to computer science students, covering core engineering fundamentals across multiple disciplines. Helping them to strengthen their understanding of key concepts and prepare for exams and projects, including: algorithms, networking, databases, data structures, operating systems.
-
-<br>
 
 ### <u>[**Project Box**](https://projectbox.pt)</u> &nbsp;·&nbsp; Analyst Developer
 #### Apr 2022 – Sep 2022  &nbsp;·&nbsp; Viseu, Portugal
 
 - Led the backend development of **UCNotes**, a new internal note taking tool, inserted across a **distributed microservices** system
 - Performed targeted **refactoring of legacy code** to improve maintainability, performance, and alignment with modern backend standards
-
-<br>
 
 ### <u>[**Critical Software**](https://www.criticalsoftware.com)</u> &nbsp;·&nbsp; Summer Intern
 #### Jul 2020 – Aug 2020 &nbsp;·&nbsp; Coimbra, Portugal
