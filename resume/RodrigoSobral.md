@@ -32,6 +32,7 @@ DevOps Engineer with a strong foundation in Software Engineering and a specializ
 - Managed main instance of SWAN, with a total of **~400 users** daily and two production clusters composed of **54 nodes** in total, contributing with new features and improvements, like the implementation of **uv**, optimising enviroment creation runtime by **~77%**
 - Implemented real-time **threat detection** tools like Falco, to monitor suspicious activity across user's sessions on **Kubernetes** clusters, and zizmor, to alert on bad practices and possible security breaches across all workflows
 - Maintained **observability pipelines** (Grafana, Prometheus) to monitor platform health and address incidents, by providing **user support** and issue resolution via ServiceNow and JIRA
+- Implemented AI agents and interfaces on SWAN (Claude, Codex, Copilot, Antigravity, OpenCode, Kiro, Mistral and Goose)
 - Supervised interns and new team members, providing **mentorship** and guidance on the platform's architecture, best practices, and operational procedures
 
 ### <u>[**UCNext**](https://www.uc.pt/ucframework)</u> &nbsp;·&nbsp; Backend Developer
