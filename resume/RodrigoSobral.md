@@ -35,7 +35,7 @@ DevOps Engineer with a strong foundation in Software Engineering and a specializ
 - Implemented AI agents and interfaces on SWAN (Claude, Codex, Copilot, Antigravity, OpenCode, Kiro, Mistral and Goose)
 - Supervised interns and new team members, providing **mentorship** and guidance on the platform's architecture, best practices, and operational procedures
 
-### <u>[**UCNext**](https://www.uc.pt/ucframework)</u> &nbsp;·&nbsp; Backend Developer
+### <u>[**UCNext**](https://www.uc.pt/ucframework)</u> &nbsp;·&nbsp; Software Engineer
 #### Oct 2022 – Oct 2023 &nbsp;·&nbsp; Coimbra, Portugal
 
 - Delivered systems serving **~34,000** students, teachers, researchers and staff across the <u>[University of Coimbra's](https://www.uc.pt)</u> digital ecosystem
@@ -47,7 +47,7 @@ DevOps Engineer with a strong foundation in Software Engineering and a specializ
 
 - Delivered remote one-on-one tutoring to computer science students, covering core engineering fundamentals across multiple disciplines. Helping them to prepare for exams and projects and strengthen their understanding of key concepts, including: algorithms, networking, databases, data structures, operating systems.
 
-### <u>[**Project Box**](https://projectbox.pt)</u> &nbsp;·&nbsp; Analyst Developer
+### <u>[**Project Box**](https://projectbox.pt)</u> &nbsp;·&nbsp; Software Engineer
 #### Apr 2022 – Sep 2022  &nbsp;·&nbsp; Viseu, Portugal
 
 - Led the backend development of **UCNotes**, a new internal note taking tool, include within a **distributed microservices** system
